@@ -1,7 +1,9 @@
 # Shaik Shahul — Portfolio
 
 Personal portfolio of **Shaik Shahul** — AI/ML Developer & Full-Stack Engineer.
-Dark, animated single-page site inspired by modern 3D-character portfolios: GSAP scroll animations, Lenis smooth scrolling, a custom cursor, a pinned horizontal projects gallery, and an interactive hero character.
+Dark, animated single-page site: GSAP scroll animations, Lenis smooth scrolling, a custom cursor, a pinned horizontal projects gallery, and a **real-time interactive 3D hero** (Three.js) with cursor head/eye tracking, a cursor-following purple light, idle breathing and scroll transitions.
+
+The hero loads `assets/models/avatar.glb` when present — see [MODEL_GUIDE.md](MODEL_GUIDE.md) for the Blender/FaceBuilder export spec. Until then a procedural stylized bust with identical node names keeps every interaction live.
 
 ## Run locally
 
@@ -19,8 +21,12 @@ Then open http://localhost:4173. (Opening `index.html` directly also works, but 
 index.html            — all content/sections
 css/style.css         — full stylesheet (Geist font, #0b080c / #c2a4ff theme)
 js/main.js            — GSAP + ScrollTrigger + Lenis animations
-assets/hero-character.png       — hero character (interactive parallax)
-assets/projects/*.svg           — 8 custom project cover images
+js/hero3d.js          — Three.js interactive 3D hero (GLB loader + placeholder)
+MODEL_GUIDE.md        — how to export avatar.glb from Blender
+assets/models/        — drop avatar.glb here (see MODEL_GUIDE.md)
+assets/video/video.webm         — Tech Stack background video
+assets/hero-character.png      — fallback / mobile hero image
+assets/projects/*.svg           — 8 minimal project cover images
 assets/resume/Shaik_Shahul_Resume.pdf
 ```
 
@@ -40,4 +46,4 @@ Hero (split-char intro, magnetic social icons, RESUME button) → About → Stat
 - **Hostinger / cPanel**: upload the folder contents to `public_html`.
 - **GitHub Pages**: push to a repo, enable Pages on the root.
 
-External dependencies (loaded from CDNs): Google Fonts (Geist), GSAP 3.12, Lenis 1.0, Devicon icons.
+External dependencies (loaded from CDNs): Google Fonts (Geist), GSAP 3.12, Lenis 1.0, Three.js 0.160, Devicon icons.

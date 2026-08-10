@@ -60,11 +60,12 @@
         </a>
       </div>
 
-      <!-- ============ CHARACTER ============ -->
+      <!-- ============ CHARACTER (real-time 3D — see js/hero3d.js) ============ -->
       <div class="character-container">
         <div class="character-model" id="characterModel">
           <div class="character-rim" id="characterRim"></div>
-          <img class="character-img" id="characterImg" src="assets/hero-character.png" alt="Shaik Shahul — 3D character" fetchpriority="high" decoding="async" />
+          <div class="character-canvas" id="characterCanvas"></div>
+          <img class="character-img character-fallback" id="characterImg" src="assets/hero-character.png" alt="Shaik Shahul — character" fetchpriority="high" decoding="async" />
         </div>
       </div>
 
@@ -468,5 +469,14 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/hero3d.js"></script>
 </body>
 </html>

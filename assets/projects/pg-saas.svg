@@ -1,374 +1,51 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Segoe UI, Arial, sans-serif">
   <defs>
-    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1" fill="rgba(194,164,255,0.055)"/>
-    </pattern>
-    <linearGradient id="winGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#16121e"/>
-      <stop offset="1" stop-color="#120e1a"/>
-    </linearGradient>
-    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1a1524"/>
-      <stop offset="1" stop-color="#16121e"/>
-    </linearGradient>
-    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#a578ff"/>
-      <stop offset="1" stop-color="#7f40ff"/>
-    </linearGradient>
-    <linearGradient id="hotBarGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#c2a4ff"/>
-      <stop offset="1" stop-color="#aa42ff"/>
-    </linearGradient>
-    <linearGradient id="progGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7f40ff"/>
-      <stop offset="1" stop-color="#c2a4ff"/>
-    </linearGradient>
-    <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#aa42ff"/>
-      <stop offset="1" stop-color="#7f40ff"/>
-    </linearGradient>
-    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#7f40ff" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#7f40ff" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#aa42ff" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#aa42ff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="sq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c2a4ff"/>
+      <stop offset="100%" stop-color="#7f40ff"/>
+    </linearGradient>
   </defs>
 
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <!-- page background -->
-    <rect x="0" y="0" width="800" height="500" fill="#0d0a12"/>
-    <!-- app window -->
-    <rect x="12" y="12" width="776" height="476" rx="14" fill="url(#winGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <rect x="0" y="0" width="800" height="500" fill="url(#dots)"/>
-    <ellipse cx="590" cy="70" rx="290" ry="160" fill="url(#glowA)"/>
-    <ellipse cx="150" cy="470" rx="250" ry="130" fill="url(#glowB)"/>
+  <rect x="0" y="0" width="800" height="500" fill="#0d0a12"/>
+  <ellipse cx="545" cy="200" rx="280" ry="185" fill="url(#glow)"/>
 
-    <!-- ===== window chrome ===== -->
-    <circle cx="34" cy="28" r="4.5" fill="#f87171"/>
-    <circle cx="50" cy="28" r="4.5" fill="#fbbf24"/>
-    <circle cx="66" cy="28" r="4.5" fill="#6ee7a0"/>
-    <!-- project pill badge -->
-    <rect x="84" y="20" width="134" height="16" rx="8" fill="rgba(127,64,255,0.16)" stroke="rgba(194,164,255,0.4)"/>
-    <text x="151" y="31" text-anchor="middle" font-size="9" font-weight="700" letter-spacing="1.1" fill="#c2a4ff">PG-MANAGEMENT SAAS</text>
-    <text x="400" y="31" text-anchor="middle" font-size="10.5" font-weight="600" fill="#eae5ec">PGManager - Dashboard</text>
-    <!-- search -->
-    <rect x="556" y="20" width="132" height="16" rx="8" fill="#0d0a12" stroke="rgba(194,164,255,0.18)"/>
-    <circle cx="568" cy="27.5" r="3" fill="none" stroke="#837c92" stroke-width="1"/>
-    <line x1="570.2" y1="29.8" x2="572.5" y2="32" stroke="#837c92" stroke-width="1"/>
-    <text x="578" y="31" font-size="9" fill="#837c92">Search tenants, rooms…</text>
-    <!-- bell -->
-    <circle cx="712" cy="28" r="8" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
-    <path d="M712 23.5c-1.9 0-3 1.5-3 3.3v2.4h6v-2.4c0-1.8-1.1-3.3-3-3.3z" fill="#837c92"/>
-    <circle cx="712" cy="31" r="0.9" fill="#837c92"/>
-    <circle cx="717.5" cy="22.5" r="2.5" fill="#f87171"/>
-    <!-- avatar -->
-    <circle cx="744" cy="28" r="9" fill="url(#avGrad)"/>
-    <text x="744" y="31.5" text-anchor="middle" font-size="9" font-weight="700" fill="#eae5ec">R</text>
-    <line x1="12" y1="44" x2="788" y2="44" stroke="rgba(194,164,255,0.14)"/>
+  <!-- occupancy grid motif: 13 filled, 3 outlined -->
+  <rect x="430" y="120" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="472" y="120" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="514" y="120" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="556" y="120" width="28" height="28" rx="8" fill="none" stroke="#c2a4ff" stroke-width="1.5" opacity="0.75"/>
+  <rect x="430" y="162" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="472" y="162" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="514" y="162" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="556" y="162" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="430" y="204" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="472" y="204" width="28" height="28" rx="8" fill="none" stroke="#c2a4ff" stroke-width="1.5" opacity="0.75"/>
+  <rect x="514" y="204" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="556" y="204" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="430" y="246" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="472" y="246" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
+  <rect x="514" y="246" width="28" height="28" rx="8" fill="none" stroke="#c2a4ff" stroke-width="1.5" opacity="0.75"/>
+  <rect x="556" y="246" width="28" height="28" rx="8" fill="url(#sq)" opacity="0.9"/>
 
-    <!-- ===== sidebar ===== -->
-    <line x1="152" y1="44" x2="152" y2="488" stroke="rgba(194,164,255,0.12)"/>
-    <text x="24" y="55" font-size="9" letter-spacing="1" fill="#837c92">MAIN</text>
-    <!-- active item -->
-    <rect x="20" y="58" width="124" height="20" rx="6" fill="rgba(127,64,255,0.22)" stroke="rgba(194,164,255,0.25)"/>
-    <rect x="20" y="62" width="2.5" height="12" rx="1.25" fill="#c2a4ff"/>
-    <rect x="28" y="64" width="8" height="8" rx="2" fill="#c2a4ff"/>
-    <text x="42" y="71" font-size="9.5" font-weight="600" fill="#eae5ec">Dashboard</text>
-    <rect x="28" y="89" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="96" font-size="9.5" fill="#837c92">Rooms</text>
-    <rect x="28" y="114" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="121" font-size="9.5" fill="#837c92">Tenants</text>
-    <rect x="28" y="139" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="146" font-size="9.5" fill="#837c92">Payments</text>
-    <rect x="120" y="136.5" width="20" height="13" rx="6.5" fill="rgba(251,191,36,0.14)" stroke="rgba(251,191,36,0.45)"/>
-    <text x="130" y="146" text-anchor="middle" font-size="9" fill="#fbbf24">11</text>
-    <rect x="28" y="164" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="171" font-size="9.5" fill="#837c92">Dues</text>
-    <rect x="28" y="189" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="196" font-size="9.5" fill="#837c92">Complaints</text>
-    <rect x="124" y="186.5" width="16" height="13" rx="6.5" fill="rgba(248,113,113,0.14)" stroke="rgba(248,113,113,0.45)"/>
-    <text x="132" y="196" text-anchor="middle" font-size="9" fill="#f87171">3</text>
-    <rect x="28" y="214" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="221" font-size="9.5" fill="#837c92">Meals</text>
-    <rect x="28" y="239" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="246" font-size="9.5" fill="#837c92">Reports</text>
-    <rect x="28" y="264" width="8" height="8" rx="2" fill="rgba(194,164,255,0.35)"/>
-    <text x="42" y="271" font-size="9.5" fill="#837c92">Settings</text>
-    <line x1="20" y1="290" x2="144" y2="290" stroke="rgba(194,164,255,0.12)"/>
-    <!-- collection mini card -->
-    <rect x="20" y="300" width="124" height="64" rx="8" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="30" y="316" font-size="9" letter-spacing="0.4" fill="#837c92">COLLECTION RATE</text>
-    <text x="30" y="334" font-size="14" font-weight="700" fill="#eae5ec">82%</text>
-    <text x="66" y="334" font-size="9" fill="#6ee7a0">▲ 3.1%</text>
-    <rect x="30" y="341" width="104" height="4" rx="2" fill="rgba(194,164,255,0.12)"/>
-    <rect x="30" y="341" width="85" height="4" rx="2" fill="url(#progGrad)"/>
-    <text x="30" y="357" font-size="9" fill="#837c92">Rs 2.4L of Rs 2.9L billed</text>
-    <!-- quick actions -->
-    <rect x="20" y="374" width="124" height="20" rx="7" fill="#7f40ff"/>
-    <text x="82" y="387.5" text-anchor="middle" font-size="9.5" font-weight="600" fill="#eae5ec">+ Add tenant</text>
-    <rect x="20" y="400" width="124" height="20" rx="7" fill="none" stroke="rgba(194,164,255,0.35)"/>
-    <text x="82" y="413.5" text-anchor="middle" font-size="9.5" fill="#c2a4ff">Record payment</text>
-    <line x1="20" y1="432" x2="144" y2="432" stroke="rgba(194,164,255,0.12)"/>
-    <circle cx="32" cy="458" r="10" fill="url(#avGrad)"/>
-    <text x="32" y="461.5" text-anchor="middle" font-size="9" font-weight="700" fill="#eae5ec">RK</text>
-    <text x="48" y="455" font-size="9.5" font-weight="600" fill="#eae5ec">Ravi Kumar</text>
-    <text x="48" y="467" font-size="9" fill="#837c92">Owner account</text>
-    <rect x="116" y="450" width="28" height="14" rx="7" fill="rgba(251,191,36,0.14)" stroke="rgba(251,191,36,0.45)"/>
-    <text x="130" y="460" text-anchor="middle" font-size="9" font-weight="700" fill="#fbbf24">PRO</text>
+  <!-- stat beside grid -->
+  <text x="622" y="196" font-size="42" font-weight="600" fill="#eae5ec" letter-spacing="1">87%</text>
+  <text x="624" y="220" font-size="12" fill="#837c92" letter-spacing="3">OCCUPANCY</text>
 
-    <!-- ===== main header ===== -->
-    <text x="162" y="64" font-size="12" font-weight="700" fill="#eae5ec">Sunrise Residency PG</text>
-    <text x="162" y="77" font-size="9" fill="#837c92">Tirupati, Andhra Pradesh · Aug 2026 · 64 rooms</text>
-    <!-- role tabs -->
-    <rect x="398" y="54" width="170" height="18" rx="9" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
-    <rect x="399.5" y="55.5" width="54" height="15" rx="7.5" fill="#7f40ff"/>
-    <text x="426" y="66.5" text-anchor="middle" font-size="9" font-weight="700" fill="#eae5ec">Owner</text>
-    <text x="483" y="66.5" text-anchor="middle" font-size="9" fill="#837c92">Manager</text>
-    <text x="540" y="66.5" text-anchor="middle" font-size="9" fill="#837c92">Tenant</text>
+  <!-- category pill -->
+  <rect x="40" y="40" width="146" height="26" rx="13" fill="#c2a4ff10" stroke="#c2a4ff33" stroke-width="1"/>
+  <text x="113" y="57" font-size="11" fill="#c2a4ff" letter-spacing="2" text-anchor="middle">SAAS - REVENUE</text>
 
-    <!-- ===== KPI row ===== -->
-    <rect x="160" y="84" width="96" height="64" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="170" y="98" font-size="9" letter-spacing="0.3" fill="#837c92">OCCUPANCY</text>
-    <circle cx="246" cy="95" r="2" fill="#c2a4ff"/>
-    <text x="170" y="119" font-size="16" font-weight="700" fill="#eae5ec">87%</text>
-    <text x="170" y="133" font-size="9" fill="#6ee7a0">▲ 4.2% vs Jul</text>
-    <rect x="170" y="139" width="76" height="3" rx="1.5" fill="rgba(194,164,255,0.12)"/>
-    <rect x="170" y="139" width="66" height="3" rx="1.5" fill="url(#progGrad)"/>
+  <!-- title block -->
+  <text x="40" y="432" font-size="32" font-weight="600" fill="#eae5ec" letter-spacing="1.5">PG Manager</text>
+  <text x="40" y="460" font-size="14" fill="#837c92" letter-spacing="0.5">Multi-role PG management, generating revenue</text>
 
-    <rect x="264" y="84" width="96" height="64" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="274" y="98" font-size="9" letter-spacing="0.3" fill="#837c92">RENT COLLECTED</text>
-    <circle cx="350" cy="95" r="2" fill="#6ee7a0"/>
-    <text x="274" y="119" font-size="16" font-weight="700" fill="#eae5ec">Rs 2.4L</text>
-    <text x="274" y="133" font-size="9" fill="#837c92">82% of Rs 2.9L</text>
-    <rect x="274" y="139" width="76" height="3" rx="1.5" fill="rgba(194,164,255,0.12)"/>
-    <rect x="274" y="139" width="62" height="3" rx="1.5" fill="#6ee7a0"/>
-
-    <rect x="368" y="84" width="96" height="64" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="378" y="98" font-size="9" letter-spacing="0.3" fill="#837c92">PENDING DUES</text>
-    <circle cx="454" cy="95" r="2" fill="#fbbf24"/>
-    <text x="378" y="119" font-size="15" font-weight="700" fill="#eae5ec">Rs 38,500</text>
-    <text x="378" y="133" font-size="9" fill="#fbbf24">11 tenants due</text>
-    <rect x="378" y="139" width="76" height="3" rx="1.5" fill="rgba(194,164,255,0.12)"/>
-    <rect x="378" y="139" width="26" height="3" rx="1.5" fill="#fbbf24"/>
-
-    <rect x="472" y="84" width="96" height="64" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="482" y="98" font-size="9" letter-spacing="0.3" fill="#837c92">ACTIVE TENANTS</text>
-    <text x="482" y="119" font-size="16" font-weight="700" fill="#eae5ec">142</text>
-    <text x="482" y="133" font-size="9" fill="#6ee7a0">+6 joined in Aug</text>
-    <polyline points="482,142 490,140 498,141 506,138 514,139 522,136 530,137 538,134 546,135 554,132" fill="none" stroke="#6ee7a0" stroke-width="1"/>
-
-    <!-- ===== monthly revenue chart ===== -->
-    <rect x="160" y="156" width="240" height="144" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="172" y="176" font-size="10.5" font-weight="700" fill="#eae5ec">Monthly revenue</text>
-    <text x="388" y="176" text-anchor="end" font-size="9" fill="#837c92">Rs lakhs · 2026</text>
-    <line x1="186" y1="222" x2="388" y2="222" stroke="rgba(194,164,255,0.08)" stroke-dasharray="3 3"/>
-    <line x1="186" y1="247" x2="388" y2="247" stroke="rgba(194,164,255,0.08)" stroke-dasharray="3 3"/>
-    <line x1="186" y1="199.5" x2="388" y2="199.5" stroke="#6ee7a0" stroke-opacity="0.45" stroke-dasharray="4 3"/>
-    <line x1="186" y1="272" x2="388" y2="272" stroke="rgba(194,164,255,0.16)"/>
-    <text x="182" y="202.5" text-anchor="end" font-size="9" fill="#6ee7a0">2.9</text>
-    <text x="182" y="225" text-anchor="end" font-size="9" fill="#837c92">2L</text>
-    <text x="182" y="250" text-anchor="end" font-size="9" fill="#837c92">1L</text>
-    <rect x="190" y="242" width="16" height="30" rx="2" fill="url(#barGrad)" opacity="0.75"/>
-    <rect x="215.5" y="234.5" width="16" height="37.5" rx="2" fill="url(#barGrad)" opacity="0.75"/>
-    <rect x="241" y="237" width="16" height="35" rx="2" fill="url(#barGrad)" opacity="0.78"/>
-    <rect x="266.5" y="227" width="16" height="45" rx="2" fill="url(#barGrad)" opacity="0.82"/>
-    <rect x="292" y="229.5" width="16" height="42.5" rx="2" fill="url(#barGrad)" opacity="0.85"/>
-    <rect x="317.5" y="222" width="16" height="50" rx="2" fill="url(#barGrad)" opacity="0.9"/>
-    <rect x="343" y="217" width="16" height="55" rx="2" fill="url(#barGrad)"/>
-    <rect x="368.5" y="212" width="16" height="60" rx="2" fill="url(#hotBarGrad)" filter="url(#glow)"/>
-    <text x="376.5" y="205" text-anchor="middle" font-size="9.5" font-weight="700" fill="#c2a4ff">2.4L</text>
-    <text x="198" y="285" text-anchor="middle" font-size="9" fill="#837c92">Jan</text>
-    <text x="223.5" y="285" text-anchor="middle" font-size="9" fill="#837c92">Feb</text>
-    <text x="249" y="285" text-anchor="middle" font-size="9" fill="#837c92">Mar</text>
-    <text x="274.5" y="285" text-anchor="middle" font-size="9" fill="#837c92">Apr</text>
-    <text x="300" y="285" text-anchor="middle" font-size="9" fill="#837c92">May</text>
-    <text x="325.5" y="285" text-anchor="middle" font-size="9" fill="#837c92">Jun</text>
-    <text x="351" y="285" text-anchor="middle" font-size="9" fill="#837c92">Jul</text>
-    <text x="376.5" y="285" text-anchor="middle" font-size="9" fill="#c2a4ff">Aug</text>
-
-    <!-- ===== rooms occupancy grid ===== -->
-    <rect x="408" y="156" width="160" height="144" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="418" y="176" font-size="10.5" font-weight="700" fill="#eae5ec">Rooms · Floor 2</text>
-    <text x="558" y="176" text-anchor="end" font-size="9" fill="#837c92">40 rooms</text>
-    <!-- row 1 -->
-    <rect x="418" y="186" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="435" y="186" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="452" y="186" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="469" y="186" width="13" height="13" rx="3" fill="rgba(251,191,36,0.45)" stroke="rgba(251,191,36,0.55)"/>
-    <rect x="486" y="186" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="503" y="186" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="520" y="186" width="13" height="13" rx="3" fill="#1a1524" stroke="rgba(194,164,255,0.22)"/>
-    <rect x="537" y="186" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <!-- row 2 -->
-    <rect x="418" y="203" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="435" y="203" width="13" height="13" rx="3" fill="#1a1524" stroke="rgba(194,164,255,0.22)"/>
-    <rect x="452" y="203" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="469" y="203" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="486" y="203" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="503" y="203" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="520" y="203" width="13" height="13" rx="3" fill="rgba(251,191,36,0.45)" stroke="rgba(251,191,36,0.55)"/>
-    <rect x="537" y="203" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <!-- row 3 -->
-    <rect x="418" y="220" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="435" y="220" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="452" y="220" width="13" height="13" rx="3" fill="rgba(248,113,113,0.5)" stroke="rgba(248,113,113,0.6)"/>
-    <rect x="469" y="220" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="486" y="220" width="13" height="13" rx="3" fill="#1a1524" stroke="rgba(194,164,255,0.22)"/>
-    <rect x="503" y="220" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="520" y="220" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="537" y="220" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <!-- row 4 -->
-    <rect x="418" y="237" width="13" height="13" rx="3" fill="#1a1524" stroke="rgba(194,164,255,0.22)"/>
-    <rect x="435" y="237" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="452" y="237" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="469" y="237" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="486" y="237" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="503" y="237" width="13" height="13" rx="3" fill="rgba(251,191,36,0.45)" stroke="rgba(251,191,36,0.55)"/>
-    <rect x="520" y="237" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="537" y="237" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <!-- row 5 -->
-    <rect x="418" y="254" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="435" y="254" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="452" y="254" width="13" height="13" rx="3" fill="#1a1524" stroke="rgba(194,164,255,0.22)"/>
-    <rect x="469" y="254" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="486" y="254" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="503" y="254" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <rect x="520" y="254" width="13" height="13" rx="3" fill="rgba(248,113,113,0.5)" stroke="rgba(248,113,113,0.6)"/>
-    <rect x="537" y="254" width="13" height="13" rx="3" fill="rgba(127,64,255,0.55)" stroke="rgba(194,164,255,0.3)"/>
-    <!-- legend -->
-    <circle cx="421" cy="284" r="3" fill="rgba(127,64,255,0.8)"/>
-    <text x="428" y="287" font-size="9" fill="#837c92">Occupied</text>
-    <circle cx="477" cy="284" r="3" fill="#1a1524" stroke="rgba(194,164,255,0.4)"/>
-    <text x="484" y="287" font-size="9" fill="#837c92">Vacant</text>
-    <circle cx="527" cy="284" r="3" fill="#fbbf24"/>
-    <text x="534" y="287" font-size="9" fill="#837c92">Due</text>
-
-    <!-- ===== tenants table ===== -->
-    <rect x="160" y="306" width="408" height="174" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="176" y="326" font-size="11" font-weight="700" fill="#eae5ec">Tenants</text>
-    <rect x="424" y="313" width="74" height="15" rx="7.5" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
-    <text x="461" y="324" text-anchor="middle" font-size="9" fill="#837c92">Floor: All ▾</text>
-    <text x="552" y="324" text-anchor="end" font-size="9" fill="#c2a4ff">View all →</text>
-    <text x="176" y="342" font-size="9" letter-spacing="0.5" fill="#837c92">NAME</text>
-    <text x="316" y="342" font-size="9" letter-spacing="0.5" fill="#837c92">ROOM</text>
-    <text x="386" y="342" font-size="9" letter-spacing="0.5" fill="#837c92">RENT</text>
-    <text x="466" y="342" font-size="9" letter-spacing="0.5" fill="#837c92">STATUS</text>
-    <line x1="172" y1="348" x2="556" y2="348" stroke="rgba(194,164,255,0.14)"/>
-    <!-- row 1 -->
-    <circle cx="186" cy="361" r="8" fill="rgba(127,64,255,0.5)"/>
-    <text x="186" y="364.5" text-anchor="middle" font-size="9" font-weight="700" fill="#c2a4ff">A</text>
-    <text x="200" y="364" font-size="9.5" fill="#eae5ec">Aarav Mehta</text>
-    <text x="316" y="364" font-size="9" fill="#837c92">A-101</text>
-    <text x="386" y="364" font-size="9" fill="#eae5ec">Rs 8,500</text>
-    <rect x="466" y="353" width="40" height="15" rx="7.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.4)"/>
-    <text x="486" y="364" text-anchor="middle" font-size="9" fill="#6ee7a0">Paid</text>
-    <text x="544" y="364" font-size="9" fill="#837c92">⋯</text>
-    <line x1="172" y1="372" x2="556" y2="372" stroke="rgba(194,164,255,0.08)"/>
-    <!-- row 2 -->
-    <circle cx="186" cy="386" r="8" fill="rgba(170,66,255,0.4)"/>
-    <text x="186" y="389.5" text-anchor="middle" font-size="9" font-weight="700" fill="#c2a4ff">P</text>
-    <text x="200" y="389" font-size="9.5" fill="#eae5ec">Priya Nair</text>
-    <text x="316" y="389" font-size="9" fill="#837c92">B-204</text>
-    <text x="386" y="389" font-size="9" fill="#eae5ec">Rs 7,000</text>
-    <rect x="466" y="378" width="40" height="15" rx="7.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.4)"/>
-    <text x="486" y="389" text-anchor="middle" font-size="9" fill="#6ee7a0">Paid</text>
-    <text x="544" y="389" font-size="9" fill="#837c92">⋯</text>
-    <line x1="172" y1="397" x2="556" y2="397" stroke="rgba(194,164,255,0.08)"/>
-    <!-- row 3 -->
-    <circle cx="186" cy="411" r="8" fill="rgba(251,191,36,0.35)"/>
-    <text x="186" y="414.5" text-anchor="middle" font-size="9" font-weight="700" fill="#fbbf24">R</text>
-    <text x="200" y="414" font-size="9.5" fill="#eae5ec">Rohan Gupta</text>
-    <text x="316" y="414" font-size="9" fill="#837c92">A-105</text>
-    <text x="386" y="414" font-size="9" fill="#eae5ec">Rs 8,500</text>
-    <rect x="466" y="403" width="36" height="15" rx="7.5" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.45)"/>
-    <text x="484" y="414" text-anchor="middle" font-size="9" fill="#fbbf24">Due</text>
-    <text x="544" y="414" font-size="9" fill="#837c92">⋯</text>
-    <line x1="172" y1="422" x2="556" y2="422" stroke="rgba(194,164,255,0.08)"/>
-    <!-- row 4 -->
-    <circle cx="186" cy="436" r="8" fill="rgba(127,64,255,0.5)"/>
-    <text x="186" y="439.5" text-anchor="middle" font-size="9" font-weight="700" fill="#c2a4ff">S</text>
-    <text x="200" y="439" font-size="9.5" fill="#eae5ec">Sneha Reddy</text>
-    <text x="316" y="439" font-size="9" fill="#837c92">C-302</text>
-    <text x="386" y="439" font-size="9" fill="#eae5ec">Rs 9,200</text>
-    <rect x="466" y="428" width="40" height="15" rx="7.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.4)"/>
-    <text x="486" y="439" text-anchor="middle" font-size="9" fill="#6ee7a0">Paid</text>
-    <text x="544" y="439" font-size="9" fill="#837c92">⋯</text>
-    <line x1="172" y1="447" x2="556" y2="447" stroke="rgba(194,164,255,0.08)"/>
-    <!-- row 5 -->
-    <circle cx="186" cy="461" r="8" fill="rgba(248,113,113,0.35)"/>
-    <text x="186" y="464.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f87171">I</text>
-    <text x="200" y="464" font-size="9.5" fill="#eae5ec">Imran Shaikh</text>
-    <text x="316" y="464" font-size="9" fill="#837c92">B-210</text>
-    <text x="386" y="464" font-size="9" fill="#eae5ec">Rs 7,000</text>
-    <rect x="466" y="453" width="56" height="15" rx="7.5" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.45)"/>
-    <text x="494" y="464" text-anchor="middle" font-size="9" fill="#f87171">Overdue</text>
-    <text x="544" y="464" font-size="9" fill="#837c92">⋯</text>
-
-    <!-- ===== right panel: payment reminders ===== -->
-    <rect x="576" y="52" width="200" height="150" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="588" y="70" font-size="10.5" font-weight="700" fill="#eae5ec">Payment reminders</text>
-    <rect x="728" y="59" width="36" height="14" rx="7" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.4)"/>
-    <text x="746" y="69" text-anchor="middle" font-size="9" letter-spacing="0.5" fill="#6ee7a0">AUTO</text>
-    <text x="588" y="106" font-size="26" font-weight="800" fill="#c2a4ff" filter="url(#glow)">34</text>
-    <text x="632" y="96" font-size="9" fill="#837c92">auto-sent this month</text>
-    <text x="632" y="108" font-size="9" fill="#837c92">28 WhatsApp · 6 SMS</text>
-    <line x1="588" y1="118" x2="764" y2="118" stroke="rgba(194,164,255,0.12)"/>
-    <circle cx="592" cy="133" r="3" fill="#6ee7a0"/>
-    <text x="600" y="136" font-size="9" fill="#eae5ec">Rohan Gupta · A-105</text>
-    <rect x="706" y="126" width="26" height="13" rx="6.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)"/>
-    <text x="719" y="135.5" text-anchor="middle" font-size="9" fill="#6ee7a0">WA</text>
-    <text x="764" y="136" text-anchor="end" font-size="9" fill="#837c92">2h</text>
-    <circle cx="592" cy="155" r="3" fill="#6ee7a0"/>
-    <text x="600" y="158" font-size="9" fill="#eae5ec">Imran Shaikh · B-210</text>
-    <rect x="706" y="148" width="26" height="13" rx="6.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)"/>
-    <text x="719" y="157.5" text-anchor="middle" font-size="9" fill="#6ee7a0">WA</text>
-    <text x="764" y="158" text-anchor="end" font-size="9" fill="#837c92">5h</text>
-    <circle cx="592" cy="177" r="3" fill="#fbbf24"/>
-    <text x="600" y="180" font-size="9" fill="#eae5ec">Kavya M. · C-108</text>
-    <rect x="700" y="170" width="32" height="13" rx="6.5" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.4)"/>
-    <text x="716" y="179.5" text-anchor="middle" font-size="9" fill="#fbbf24">SMS</text>
-    <text x="764" y="180" text-anchor="end" font-size="9" fill="#837c92">9:00</text>
-
-    <!-- ===== right panel: collections donut ===== -->
-    <rect x="576" y="210" width="200" height="120" rx="10" fill="url(#cardGrad)" stroke="rgba(194,164,255,0.18)"/>
-    <text x="588" y="228" font-size="10.5" font-weight="700" fill="#eae5ec">Collections split</text>
-    <circle cx="624" cy="282" r="26" fill="none" stroke="rgba(194,164,255,0.1)" stroke-width="9"/>
-    <circle cx="624" cy="282" r="26" fill="none" stroke="#6ee7a0" stroke-width="9" stroke-linecap="butt" stroke-dasharray="131.9 163.4" transform="rotate(-90 624 282)"/>
-    <circle cx="624" cy="282" r="26" fill="none" stroke="#fbbf24" stroke-width="9" stroke-linecap="butt" stroke-dasharray="17.6 163.4" transform="rotate(205.2 624 282)"/>
-    <circle cx="624" cy="282" r="26" fill="none" stroke="#f87171" stroke-width="9" stroke-linecap="butt" stroke-dasharray="7.8 163.4" transform="rotate(248.4 624 282)"/>
-    <text x="624" y="286" text-anchor="middle" font-size="11" font-weight="700" fill="#eae5ec">82%</text>
-    <circle cx="670" cy="260" r="3" fill="#6ee7a0"/>
-    <text x="678" y="263" font-size="9" fill="#eae5ec">Paid · 82%</text>
-    <circle cx="670" cy="278" r="3" fill="#fbbf24"/>
-    <text x="678" y="281" font-size="9" fill="#eae5ec">Due · 12%</text>
-    <circle cx="670" cy="296" r="3" fill="#f87171"/>
-    <text x="678" y="299" font-size="9" fill="#eae5ec">Overdue · 6%</text>
-    <text x="588" y="320" font-size="9" fill="#837c92">Rs 2.4L collected of Rs 2.9L billed</text>
-
-    <!-- ===== right panel: terminal ===== -->
-    <rect x="576" y="338" width="200" height="142" rx="10" fill="#0d0a12" stroke="rgba(194,164,255,0.18)"/>
-    <rect x="577" y="339" width="198" height="17" rx="9" fill="#16121e"/>
-    <circle cx="590" cy="347.5" r="2.5" fill="#f87171"/>
-    <circle cx="600" cy="347.5" r="2.5" fill="#fbbf24"/>
-    <circle cx="610" cy="347.5" r="2.5" fill="#6ee7a0"/>
-    <text x="622" y="351" font-size="9" fill="#837c92">reminder-worker · live</text>
-    <g font-family="Consolas, 'Courier New', monospace" font-size="9">
-      <text x="590" y="374"><tspan fill="#c2a4ff">$</tspan><tspan fill="#eae5ec"> pg reminders run --aug</tspan></text>
-      <text x="590" y="388" fill="#837c92">→ queued 36 due tenants</text>
-      <text x="590" y="402" fill="#6ee7a0">✓ whatsapp · 28 delivered</text>
-      <text x="590" y="416" fill="#6ee7a0">✓ sms · 6 delivered</text>
-      <text x="590" y="430" fill="#f87171">✗ 2 failed · retry @ 09:00</text>
-      <text x="590" y="444"><tspan fill="#c2a4ff">$</tspan><tspan fill="#eae5ec"> pg dues sync --live</tspan></text>
-      <text x="590" y="458" fill="#6ee7a0">✓ synced 142 tenants (412ms)</text>
-    </g>
-    <rect x="590" y="463" width="6" height="10" fill="#c2a4ff" opacity="0.85"/>
-  </g>
+  <!-- tech chips -->
+  <rect x="618" y="436" width="62" height="24" rx="12" fill="#c2a4ff10" stroke="#c2a4ff33" stroke-width="1"/>
+  <text x="649" y="452" font-size="11" fill="#c2a4ff" letter-spacing="1" text-anchor="middle">React</text>
+  <rect x="690" y="436" width="70" height="24" rx="12" fill="#c2a4ff10" stroke="#c2a4ff33" stroke-width="1"/>
+  <text x="725" y="452" font-size="11" fill="#c2a4ff" letter-spacing="1" text-anchor="middle">Node.js</text>
 </svg>
