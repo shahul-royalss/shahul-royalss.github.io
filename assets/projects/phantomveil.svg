@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img">
+  <defs>
+    <radialGradient id="gA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aa42ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#aa42ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1524"/>
+      <stop offset="100%" stop-color="#16121e"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f40ff"/>
+      <stop offset="100%" stop-color="#c2a4ff"/>
+    </linearGradient>
+    <linearGradient id="lsbGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f40ff"/>
+      <stop offset="100%" stop-color="#aa42ff"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#aa42ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0d0a12" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dotGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(194,164,255,0.06)"/>
+    </pattern>
+    <pattern id="cells" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="6" height="6" rx="1" fill="#1a1524"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowSoft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="photoClip">
+      <rect x="486" y="84" width="180" height="112" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <!-- page background -->
+  <rect x="0" y="0" width="800" height="500" fill="#0d0a12"/>
+  <circle cx="560" cy="90" r="250" fill="url(#gA)"/>
+  <circle cx="140" cy="430" r="230" fill="url(#gB)"/>
+
+  <!-- app window -->
+  <rect x="12" y="12" width="776" height="476" rx="14" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+  <rect x="0" y="0" width="800" height="500" fill="url(#dotGrid)"/>
+  <circle cx="620" cy="70" r="180" fill="url(#gA)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <!-- title bar -->
+    <path d="M13 48 H787" stroke="rgba(194,164,255,0.12)"/>
+    <circle cx="32" cy="30" r="4.5" fill="#f87171"/>
+    <circle cx="50" cy="30" r="4.5" fill="#fbbf24"/>
+    <circle cx="68" cy="30" r="4.5" fill="#6ee7a0"/>
+    <rect x="86" y="20" width="124" height="20" rx="10" fill="rgba(127,64,255,0.15)" stroke="rgba(194,164,255,0.4)"/>
+    <text x="148" y="34" font-size="10" letter-spacing="2" text-anchor="middle" fill="#c2a4ff" font-weight="600">PHANTOMVEIL</text>
+    <text x="226" y="33" font-size="10" fill="#837c92">v1.4.2 · hide data in plain sight · image + text steganography</text>
+
+    <rect x="565" y="21" width="62" height="18" rx="9" fill="rgba(194,164,255,0.08)" stroke="rgba(194,164,255,0.25)"/>
+    <circle cx="577" cy="30" r="3" fill="#c2a4ff"/>
+    <text x="584" y="34" font-size="9" fill="#c2a4ff">Python</text>
+    <rect x="633" y="21" width="44" height="18" rx="9" fill="rgba(110,231,160,0.08)" stroke="rgba(110,231,160,0.3)"/>
+    <text x="655" y="34" font-size="9" fill="#6ee7a0" text-anchor="middle">MIT</text>
+    <rect x="683" y="21" width="92" height="18" rx="9" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.25)"/>
+    <circle cx="695" cy="30" r="3" fill="#fbbf24"/>
+    <text x="702" y="34" font-size="9" fill="#fbbf24">open source</text>
+
+    <!-- ============ TERMINAL (left) ============ -->
+    <rect x="26" y="60" width="360" height="352" rx="10" fill="#0d0a12" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="40" cy="73" r="2.5" fill="#6ee7a0"/>
+    <text x="48" y="76" font-size="9" fill="#837c92">bash — phantomveil · ~/lab/stego</text>
+    <path d="M27 84 H385" stroke="rgba(194,164,255,0.12)"/>
+
+    <text x="38" y="106" font-size="10"><tspan fill="#6ee7a0">$</tspan> <tspan fill="#eae5ec">phantomveil embed</tspan> <tspan fill="#c2a4ff">--in</tspan> <tspan fill="#eae5ec">photo.png</tspan> <tspan fill="#c2a4ff">--data</tspan> <tspan fill="#eae5ec">secret.txt</tspan></text>
+    <text x="38" y="122" font-size="9" fill="#837c92">scanning carrier · 1,048,576 px · RGB · 8-bit depth</text>
+
+    <rect x="38" y="130" width="236" height="8" rx="4" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+    <rect x="38" y="130" width="236" height="8" rx="4" fill="url(#barGrad)"/>
+    <rect x="200" y="130" width="30" height="8" rx="4" fill="#eae5ec" opacity="0.18"/>
+    <text x="282" y="138" font-size="9" fill="#c2a4ff">100% · 0.42s</text>
+
+    <text x="38" y="158" font-size="10"><tspan fill="#6ee7a0">✓</tspan> <tspan fill="#eae5ec">payload encrypted — AES-256</tspan></text>
+    <text x="38" y="176" font-size="10"><tspan fill="#6ee7a0">✓</tspan> <tspan fill="#eae5ec">embedded 4.2KB across 1,048,576 px</tspan></text>
+    <text x="38" y="192" font-size="9" fill="#837c92">entropy Δ +0.0003 · chi-square pass · psnr 51.2 dB</text>
+
+    <text x="38" y="214" font-size="10"><tspan fill="#6ee7a0">$</tspan> <tspan fill="#eae5ec">phantomveil extract photo_stego.png</tspan></text>
+    <text x="38" y="230" font-size="9" fill="#837c92">reading bit-planes · LSB(0) · channels R·G·B</text>
+
+    <!-- extracted bit cells -->
+    <g>
+      <rect x="38" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="49" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="60" y="236" width="6" height="6" rx="1" fill="#c2a4ff"/>
+      <rect x="71" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="82" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="93" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="104" y="236" width="6" height="6" rx="1" fill="#aa42ff"/>
+      <rect x="115" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="126" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="137" y="236" width="6" height="6" rx="1" fill="#c2a4ff"/>
+      <rect x="148" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="159" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="170" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="181" y="236" width="6" height="6" rx="1" fill="#aa42ff"/>
+      <rect x="192" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="203" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="214" y="236" width="6" height="6" rx="1" fill="#c2a4ff"/>
+      <rect x="225" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+      <rect x="236" y="236" width="6" height="6" rx="1" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+      <rect x="247" y="236" width="6" height="6" rx="1" fill="#7f40ff"/>
+    </g>
+    <text x="262" y="242" font-size="9" fill="#837c92">4,308 bytes</text>
+
+    <text x="38" y="264" font-size="10"><tspan fill="#6ee7a0">✓</tspan> <tspan fill="#eae5ec">recovered: secret.txt (sha256 verified)</tspan></text>
+    <text x="38" y="278" font-size="9" fill="#837c92">sha256 9f86d081884c7d65…9b0f00a08 · match</text>
+
+    <text x="38" y="298" font-size="10" fill="#6ee7a0">$</text>
+    <rect x="50" y="289" width="7" height="11" fill="#c2a4ff" opacity="0.85"/>
+
+    <!-- session log -->
+    <path d="M27 314 H385" stroke="rgba(194,164,255,0.12)"/>
+    <text x="38" y="330" font-size="9" fill="#837c92" letter-spacing="1"><tspan x="38">TIME</tspan><tspan x="104">OP</tspan><tspan x="168">PAYLOAD</tspan><tspan x="240">CARRIER</tspan></text>
+    <rect x="32" y="337" width="342" height="13" rx="3" fill="rgba(194,164,255,0.05)"/>
+    <text y="347" font-size="9" fill="#eae5ec"><tspan x="38" fill="#837c92">14:02:11</tspan><tspan x="104" fill="#c2a4ff">embed</tspan><tspan x="168">4.2 KB</tspan><tspan x="240">photo.png</tspan></text>
+    <text y="362" font-size="9" fill="#eae5ec"><tspan x="38" fill="#837c92">14:02:38</tspan><tspan x="104" fill="#6ee7a0">extract</tspan><tspan x="168">4.2 KB</tspan><tspan x="240">photo_stego.png</tspan></text>
+    <rect x="32" y="367" width="342" height="13" rx="3" fill="rgba(194,164,255,0.05)"/>
+    <text y="377" font-size="9" fill="#eae5ec"><tspan x="38" fill="#837c92">14:03:05</tspan><tspan x="104" fill="#c2a4ff">embed</tspan><tspan x="168">1.1 KB</tspan><tspan x="240">notes.txt · zwsp</tspan></text>
+    <text x="38" y="398" font-size="9" fill="#837c92">3 ops · 0 warnings · engine lsb+zwsp 1.4.2</text>
+
+    <!-- ============ BINARY STREAM (between terminal and photo) ============ -->
+    <path d="M470,110 C440,106 420,132 388,128" fill="none" stroke="#7f40ff" stroke-opacity="0.35" stroke-dasharray="2 4"/>
+    <path d="M470,178 C444,186 418,164 388,172" fill="none" stroke="#c2a4ff" stroke-opacity="0.25" stroke-dasharray="2 4"/>
+    <text x="392" y="104" font-size="9" fill="#c2a4ff" opacity="0.32">0 1 1 0 1 0 0 1</text>
+    <text x="398" y="122" font-size="9" fill="#c2a4ff" opacity="0.2" transform="rotate(-4 430 122)">1 0 0 1 1 1 0 1</text>
+    <text x="390" y="144" font-size="10" fill="#c2a4ff" opacity="0.38">1 1 0 1 0 0 1 0</text>
+    <text x="402" y="164" font-size="9" fill="#c2a4ff" opacity="0.18">0 0 1 0 1 1 0 1</text>
+    <text x="392" y="188" font-size="9" fill="#c2a4ff" opacity="0.33" transform="rotate(3 420 188)">1 0 1 1 0 0 1 0</text>
+    <text x="404" y="208" font-size="9" fill="#c2a4ff" opacity="0.16">0 1 0 0 1 0 1 1</text>
+    <text x="394" y="228" font-size="9" fill="#c2a4ff" opacity="0.26">1 1 0 0 1 0 1 1</text>
+
+    <!-- pixels dissolving off the photo edge -->
+    <rect x="470" y="96" width="5" height="5" fill="#c2a4ff" opacity="0.7"/>
+    <rect x="460" y="104" width="4" height="4" fill="#7f40ff" opacity="0.55"/>
+    <rect x="472" y="118" width="6" height="6" fill="#aa42ff" opacity="0.65"/>
+    <rect x="452" y="124" width="3" height="3" fill="#c2a4ff" opacity="0.4"/>
+    <rect x="466" y="136" width="5" height="5" fill="#7f40ff" opacity="0.6"/>
+    <rect x="444" y="142" width="4" height="4" fill="#c2a4ff" opacity="0.3"/>
+    <rect x="470" y="158" width="6" height="6" fill="#c2a4ff" opacity="0.7"/>
+    <rect x="456" y="166" width="3" height="3" fill="#aa42ff" opacity="0.4"/>
+    <rect x="468" y="180" width="4" height="4" fill="#7f40ff" opacity="0.55"/>
+    <rect x="448" y="186" width="5" height="5" fill="#c2a4ff" opacity="0.3"/>
+    <rect x="438" y="112" width="3" height="3" fill="#c2a4ff" opacity="0.22"/>
+    <rect x="432" y="152" width="3" height="3" fill="#7f40ff" opacity="0.25"/>
+    <rect x="426" y="170" width="4" height="4" fill="#c2a4ff" opacity="0.18"/>
+    <rect x="434" y="196" width="3" height="3" fill="#aa42ff" opacity="0.2"/>
+
+    <!-- ============ CARRIER PREVIEW (photo frame) ============ -->
+    <text x="478" y="70" font-size="9" fill="#837c92" letter-spacing="1.5">CARRIER PREVIEW</text>
+    <rect x="478" y="76" width="196" height="148" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+    <g clip-path="url(#photoClip)">
+      <rect x="486" y="84" width="180" height="112" fill="#0d0a12"/>
+      <rect x="486" y="84" width="180" height="112" fill="url(#skyGrad)"/>
+      <circle cx="522" cy="98" r="1" fill="#eae5ec" opacity="0.7"/>
+      <circle cx="556" cy="90" r="1" fill="#eae5ec" opacity="0.5"/>
+      <circle cx="588" cy="100" r="1" fill="#eae5ec" opacity="0.65"/>
+      <circle cx="642" cy="94" r="1" fill="#eae5ec" opacity="0.5"/>
+      <circle cx="500" cy="110" r="1" fill="#eae5ec" opacity="0.4"/>
+      <circle cx="612" cy="112" r="14" fill="#c2a4ff" opacity="0.9" filter="url(#glowSoft)"/>
+      <circle cx="607" cy="107" r="4" fill="#7f40ff" opacity="0.3"/>
+      <polygon points="486,196 486,152 516,118 546,148 566,128 596,158 620,140 666,166 666,196" fill="#16121e" stroke="#7f40ff" stroke-opacity="0.35"/>
+      <polygon points="486,196 486,170 522,140 560,178 590,150 630,182 666,168 666,196" fill="#0d0a12" opacity="0.92" stroke="rgba(194,164,255,0.2)"/>
+      <path d="M486 108 H666" stroke="rgba(194,164,255,0.06)"/>
+      <path d="M486 140 H666" stroke="rgba(194,164,255,0.06)"/>
+      <path d="M486 172 H666" stroke="rgba(194,164,255,0.06)"/>
+    </g>
+    <text x="486" y="215" font-size="9" fill="#837c92">photo_stego.png · 1024×1024 · Δ ±1 per px</text>
+
+    <!-- ============ CHANNELS panel (far right) ============ -->
+    <rect x="690" y="76" width="85" height="148" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+    <text x="698" y="94" font-size="9" fill="#837c92" letter-spacing="1">CHANNELS</text>
+    <circle cx="702" cy="106" r="3.5" fill="#f87171"/>
+    <text x="710" y="109" font-size="9" fill="#eae5ec">R</text>
+    <rect x="722" y="102" width="44" height="4" rx="2" fill="#1a1524"/>
+    <rect x="722" y="102" width="16" height="4" rx="2" fill="#f87171" opacity="0.8"/>
+    <circle cx="702" cy="132" r="3.5" fill="#6ee7a0"/>
+    <text x="710" y="135" font-size="9" fill="#eae5ec">G</text>
+    <rect x="722" y="128" width="44" height="4" rx="2" fill="#1a1524"/>
+    <rect x="722" y="128" width="14" height="4" rx="2" fill="#6ee7a0" opacity="0.8"/>
+    <circle cx="702" cy="158" r="3.5" fill="#c2a4ff"/>
+    <text x="710" y="161" font-size="9" fill="#eae5ec">B</text>
+    <rect x="722" y="154" width="44" height="4" rx="2" fill="#1a1524"/>
+    <rect x="722" y="154" width="13" height="4" rx="2" fill="#c2a4ff" opacity="0.8"/>
+    <rect x="698" y="176" width="68" height="15" rx="7" fill="rgba(170,66,255,0.12)" stroke="rgba(170,66,255,0.45)"/>
+    <text x="732" y="187" font-size="9" fill="#aa42ff" text-anchor="middle">zwsp mode</text>
+    <text x="698" y="208" font-size="9" fill="#837c92">plane LSB(0)</text>
+
+    <!-- ============ PX MAP strip ============ -->
+    <text x="396" y="246" font-size="9" fill="#837c92" letter-spacing="1">PX MAP</text>
+    <rect x="396" y="252" width="68" height="126" rx="8" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+    <rect x="402" y="260" width="56" height="104" fill="url(#cells)"/>
+    <rect x="402" y="260" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.9"/>
+    <rect x="418" y="260" width="6" height="6" rx="1" fill="#aa42ff" opacity="0.7"/>
+    <rect x="434" y="268" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.8"/>
+    <rect x="410" y="276" width="6" height="6" rx="1" fill="#c2a4ff" opacity="0.7"/>
+    <rect x="450" y="276" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.6"/>
+    <rect x="402" y="284" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.9"/>
+    <rect x="426" y="284" width="6" height="6" rx="1" fill="#aa42ff" opacity="0.65"/>
+    <rect x="442" y="292" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.8"/>
+    <rect x="410" y="300" width="6" height="6" rx="1" fill="#c2a4ff" opacity="0.55"/>
+    <rect x="434" y="300" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.75"/>
+    <rect x="450" y="308" width="6" height="6" rx="1" fill="#aa42ff" opacity="0.7"/>
+    <rect x="418" y="316" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.85"/>
+    <rect x="402" y="324" width="6" height="6" rx="1" fill="#c2a4ff" opacity="0.6"/>
+    <rect x="442" y="324" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.7"/>
+    <rect x="426" y="332" width="6" height="6" rx="1" fill="#aa42ff" opacity="0.75"/>
+    <rect x="410" y="340" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.65"/>
+    <rect x="450" y="348" width="6" height="6" rx="1" fill="#c2a4ff" opacity="0.5"/>
+    <rect x="434" y="356" width="6" height="6" rx="1" fill="#7f40ff" opacity="0.8"/>
+    <text x="396" y="394" font-size="9" fill="#837c92">4.2 KB · 12%</text>
+    <text x="396" y="406" font-size="9" fill="#837c92">seed 0x9f86</text>
+
+    <!-- ============ LSB BIT-PLANE STACK ============ -->
+    <text x="478" y="246" font-size="9" fill="#837c92" letter-spacing="1.5">LSB BIT-PLANE STACK</text>
+    <text x="464" y="316" font-size="9" fill="#837c92" text-anchor="middle" transform="rotate(-90 464 316)">MSB → LSB</text>
+    <path d="M471 256 V372" stroke="rgba(194,164,255,0.25)"/>
+    <polygon points="504,256 648,256 622,264 478,264" fill="#1a1524" stroke="rgba(194,164,255,0.18)" opacity="0.95"/>
+    <text x="656" y="263" font-size="9" fill="#837c92">bit 7</text>
+    <polygon points="504,271 648,271 622,279 478,279" fill="#16121e" stroke="rgba(194,164,255,0.18)" opacity="0.9"/>
+    <text x="656" y="278" font-size="9" fill="#837c92">bit 6</text>
+    <polygon points="504,286 648,286 622,294 478,294" fill="#1a1524" stroke="rgba(194,164,255,0.18)" opacity="0.9"/>
+    <text x="656" y="293" font-size="9" fill="#837c92">bit 5</text>
+    <polygon points="504,301 648,301 622,309 478,309" fill="#16121e" stroke="rgba(194,164,255,0.18)" opacity="0.85"/>
+    <text x="656" y="308" font-size="9" fill="#837c92">bit 4</text>
+    <polygon points="504,316 648,316 622,324 478,324" fill="#1a1524" stroke="rgba(194,164,255,0.18)" opacity="0.85"/>
+    <text x="656" y="323" font-size="9" fill="#837c92">bit 3</text>
+    <polygon points="504,331 648,331 622,339 478,339" fill="#16121e" stroke="rgba(194,164,255,0.18)" opacity="0.8"/>
+    <text x="656" y="338" font-size="9" fill="#837c92">bit 2</text>
+    <polygon points="504,346 648,346 622,354 478,354" fill="#1a1524" stroke="rgba(194,164,255,0.18)" opacity="0.8"/>
+    <text x="656" y="353" font-size="9" fill="#837c92">bit 1</text>
+    <polygon points="504,361 648,361 622,369 478,369" fill="url(#lsbGrad)" stroke="#c2a4ff" filter="url(#glow)"/>
+    <text x="656" y="368" font-size="9" fill="#c2a4ff">bit 0 · LSB</text>
+    <path d="M478,366 C462,372 452,368 446,362" fill="none" stroke="#c2a4ff" stroke-opacity="0.4" stroke-dasharray="2 3"/>
+    <text x="478" y="388" font-size="9" fill="#837c92">payload bits woven into plane 0 · MSB planes untouched</text>
+    <text x="478" y="402" font-size="9" fill="#837c92">+ zero-width chars for text carriers</text>
+
+    <!-- ghost / veil motif -->
+    <g transform="translate(708,300)">
+      <path d="M8,72 V34 a24,24 0 0 1 48,0 V72 l-8,-7 -8,7 -8,-7 -8,7 -8,-7 -8,7 z" fill="#c2a4ff" fill-opacity="0.13" stroke="#c2a4ff" stroke-opacity="0.28"/>
+      <circle cx="23" cy="34" r="3.5" fill="#0d0a12"/>
+      <circle cx="41" cy="34" r="3.5" fill="#0d0a12"/>
+      <path d="M14,20 q10,-8 20,0" fill="none" stroke="#c2a4ff" stroke-opacity="0.18"/>
+    </g>
+
+    <!-- ============ FOOTER STAT CARDS ============ -->
+    <rect x="26" y="424" width="178" height="52" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+    <text x="38" y="440" font-size="9" fill="#837c92" letter-spacing="1">CAPACITY</text>
+    <text x="38" y="456" font-size="12" fill="#eae5ec">4.2 / 384 KB</text>
+    <rect x="38" y="463" width="152" height="5" rx="2.5" fill="#1a1524"/>
+    <rect x="38" y="463" width="19" height="5" rx="2.5" fill="url(#barGrad)"/>
+
+    <rect x="216" y="424" width="178" height="52" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+    <text x="228" y="440" font-size="9" fill="#837c92" letter-spacing="1">PSNR</text>
+    <text x="228" y="456" font-size="12" fill="#eae5ec">51.2 dB</text>
+    <polyline points="296,468 306,462 316,465 326,458 336,463 346,456 356,461 366,455 376,459" fill="none" stroke="#6ee7a0" stroke-width="1.5" opacity="0.85"/>
+
+    <rect x="406" y="424" width="178" height="52" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+    <text x="418" y="440" font-size="9" fill="#837c92" letter-spacing="1">CHI-SQUARE</text>
+    <text x="418" y="456" font-size="12" fill="#eae5ec">0.9982</text>
+    <rect x="466" y="445" width="34" height="14" rx="7" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.4)"/>
+    <text x="483" y="455" font-size="9" fill="#6ee7a0" text-anchor="middle">pass</text>
+    <rect x="514" y="458" width="5" height="10" fill="rgba(194,164,255,0.45)"/>
+    <rect x="522" y="454" width="5" height="14" fill="rgba(194,164,255,0.45)"/>
+    <rect x="530" y="460" width="5" height="8" fill="rgba(194,164,255,0.45)"/>
+    <rect x="538" y="452" width="5" height="16" fill="#aa42ff" opacity="0.8"/>
+    <rect x="546" y="457" width="5" height="11" fill="rgba(194,164,255,0.45)"/>
+    <rect x="554" y="461" width="5" height="7" fill="rgba(194,164,255,0.45)"/>
+    <rect x="562" y="455" width="5" height="13" fill="rgba(194,164,255,0.45)"/>
+
+    <rect x="596" y="424" width="178" height="52" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+    <text x="608" y="440" font-size="9" fill="#837c92" letter-spacing="1">DETECTABILITY</text>
+    <text x="608" y="456" font-size="12" fill="#6ee7a0">low</text>
+    <rect x="668" y="463" width="32" height="5" rx="2.5" fill="#6ee7a0" opacity="0.8"/>
+    <rect x="702" y="463" width="32" height="5" rx="2.5" fill="#fbbf24" opacity="0.5"/>
+    <rect x="736" y="463" width="26" height="5" rx="2.5" fill="#f87171" opacity="0.4"/>
+    <polygon points="676,455 684,455 680,460" fill="#eae5ec"/>
+    <text x="608" y="470" font-size="9" fill="#837c92">stegdetect · aletheia</text>
+  </g>
+</svg>

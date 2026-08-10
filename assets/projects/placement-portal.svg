@@ -1,0 +1,339 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1524"/>
+      <stop offset="1" stop-color="#16121e"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7f40ff"/>
+      <stop offset="1" stop-color="#aa42ff"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c2a4ff"/>
+      <stop offset="1" stop-color="#7f40ff"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7f40ff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#7f40ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#aa42ff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#aa42ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1" fill="rgba(194,164,255,0.06)"/>
+    </pattern>
+    <filter id="blur6" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="blur3" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="500" fill="#0d0a12"/>
+  <rect width="800" height="500" fill="url(#dotGrid)"/>
+  <circle cx="150" cy="40" r="230" fill="url(#glowA)"/>
+  <circle cx="700" cy="470" r="210" fill="url(#glowB)"/>
+
+  <!-- window frame -->
+  <rect x="12" y="12" width="776" height="476" rx="14" fill="#16121e" stroke="rgba(194,164,255,0.18)"/>
+  <circle cx="200" cy="70" r="150" fill="url(#glowA)" opacity="0.35"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <!-- title bar -->
+    <line x1="12" y1="46" x2="788" y2="46" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="32" cy="29" r="5" fill="#f87171"/>
+    <circle cx="48" cy="29" r="5" fill="#fbbf24"/>
+    <circle cx="64" cy="29" r="5" fill="#6ee7a0"/>
+    <rect x="84" y="20" width="176" height="18" rx="9" fill="#0d0a12" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="94" cy="29" r="2" fill="#6ee7a0"/>
+    <text x="102" y="32" font-size="9" fill="#837c92">127.0.0.1:5000/dashboard</text>
+    <text x="420" y="32" font-size="10" fill="#eae5ec" font-weight="600" text-anchor="middle">Placement Portal <tspan fill="#837c92" font-weight="400">&#183; TPO Dashboard</tspan></text>
+
+    <!-- stopwatch badge -->
+    <rect x="584" y="19" width="130" height="20" rx="10" fill="rgba(251,191,36,0.10)" stroke="rgba(251,191,36,0.45)"/>
+    <circle cx="598" cy="30" r="5" fill="none" stroke="#fbbf24" stroke-width="1.4"/>
+    <line x1="596" y1="22.5" x2="600" y2="22.5" stroke="#fbbf24" stroke-width="1.4"/>
+    <line x1="598" y1="30" x2="601" y2="27" stroke="#fbbf24" stroke-width="1.2"/>
+    <text x="608" y="33" font-size="9" fill="#fbbf24" letter-spacing="0.4" font-weight="600">BUILT IN 40 MIN</text>
+
+    <!-- 2nd place badge -->
+    <rect x="718" y="19" width="62" height="20" rx="10" fill="rgba(110,231,160,0.10)" stroke="rgba(110,231,160,0.45)"/>
+    <text x="749" y="32" font-size="9" fill="#6ee7a0" font-weight="600" text-anchor="middle">2ND PLACE</text>
+
+    <!-- sidebar -->
+    <path d="M12 46 h130 v442 h-116 a14 14 0 0 1 -14 -14 z" fill="#1a1524"/>
+    <line x1="142" y1="46" x2="142" y2="488" stroke="rgba(194,164,255,0.18)"/>
+    <rect x="24" y="58" width="22" height="22" rx="6" fill="url(#accentGrad)"/>
+    <text x="35" y="73" font-size="11" fill="#eae5ec" font-weight="700" text-anchor="middle">P</text>
+    <text x="52" y="68" font-size="10" fill="#eae5ec" font-weight="600">Placement</text>
+    <text x="52" y="79" font-size="9" fill="#837c92">Portal v0.1</text>
+
+    <!-- nav -->
+    <rect x="18" y="93" width="118" height="20" rx="6" fill="rgba(127,64,255,0.25)" stroke="rgba(194,164,255,0.35)"/>
+    <g fill="none" stroke="#c2a4ff" stroke-width="1.2">
+      <rect x="27" y="98" width="4.5" height="4.5" rx="1"/>
+      <rect x="33.5" y="98" width="4.5" height="4.5" rx="1"/>
+      <rect x="27" y="104.5" width="4.5" height="4.5" rx="1"/>
+      <rect x="33.5" y="104.5" width="4.5" height="4.5" rx="1"/>
+    </g>
+    <text x="44" y="107" font-size="9.5" fill="#eae5ec" font-weight="600">Dashboard</text>
+
+    <g fill="none" stroke="#837c92" stroke-width="1.2">
+      <rect x="27" y="123" width="11" height="7.5" rx="1.5"/>
+      <path d="M30.5 123 v-2 h4 v2"/>
+    </g>
+    <text x="44" y="131" font-size="9.5" fill="#837c92">Drives</text>
+
+    <g fill="none" stroke="#837c92" stroke-width="1.2">
+      <circle cx="32.5" cy="149" r="3"/>
+      <path d="M27 156.5 c0 -3 11 -3 11 0"/>
+    </g>
+    <text x="44" y="155" font-size="9.5" fill="#837c92">Students</text>
+
+    <g fill="none" stroke="#837c92" stroke-width="1.2">
+      <rect x="27.5" y="171" width="9.5" height="12" rx="1.5"/>
+      <line x1="30" y1="175" x2="35" y2="175"/>
+      <line x1="30" y1="178.5" x2="35" y2="178.5"/>
+    </g>
+    <text x="44" y="181" font-size="9.5" fill="#837c92">Applications</text>
+
+    <path d="M28 201 l3 3 l6.5 -6.5" fill="none" stroke="#837c92" stroke-width="1.4"/>
+    <text x="44" y="205" font-size="9.5" fill="#837c92">Approvals</text>
+    <rect x="113" y="192" width="17" height="13" rx="6.5" fill="rgba(248,113,113,0.15)" stroke="rgba(248,113,113,0.5)"/>
+    <text x="121.5" y="202" font-size="9" fill="#f87171" text-anchor="middle" font-weight="600">4</text>
+
+    <g stroke="#837c92" stroke-width="2">
+      <line x1="28.5" y1="230" x2="28.5" y2="223"/>
+      <line x1="33" y1="230" x2="33" y2="219"/>
+      <line x1="37.5" y1="230" x2="37.5" y2="226"/>
+    </g>
+    <text x="44" y="229" font-size="9.5" fill="#837c92">Reports</text>
+
+    <g fill="none" stroke="#837c92" stroke-width="1.2">
+      <circle cx="32.5" cy="249" r="3.5"/>
+      <line x1="32.5" y1="243" x2="32.5" y2="245"/>
+      <line x1="32.5" y1="253" x2="32.5" y2="255"/>
+      <line x1="26.5" y1="249" x2="28.5" y2="249"/>
+      <line x1="36.5" y1="249" x2="38.5" y2="249"/>
+    </g>
+    <text x="44" y="253" font-size="9.5" fill="#837c92">Settings</text>
+
+    <!-- sidebar terminal -->
+    <rect x="20" y="292" width="114" height="118" rx="8" fill="#0d0a12" stroke="rgba(194,164,255,0.18)"/>
+    <text x="28" y="306" font-size="9" fill="#837c92">app.py &#8212; flask</text>
+    <line x1="20" y1="312" x2="134" y2="312" stroke="rgba(194,164,255,0.12)"/>
+    <g font-family="Consolas, Courier New, monospace" font-size="9">
+      <text x="28" y="326" fill="#837c92"><tspan fill="#c2a4ff">$</tspan> flask run</text>
+      <text x="28" y="340" fill="#837c92">Serving 'app'</text>
+      <text x="28" y="354" fill="#837c92">Debug: on</text>
+      <text x="28" y="368" fill="#eae5ec">127.0.0.1:5000</text>
+      <text x="28" y="382" fill="#837c92">GET /drives <tspan fill="#6ee7a0">200</tspan></text>
+      <text x="28" y="396" fill="#837c92">POST /apply <tspan fill="#6ee7a0">201</tspan></text>
+    </g>
+
+    <!-- sidebar user -->
+    <line x1="20" y1="422" x2="134" y2="422" stroke="rgba(194,164,255,0.12)"/>
+    <circle cx="32" cy="442" r="9" fill="url(#accentGrad)"/>
+    <text x="32" y="445.5" font-size="9" fill="#eae5ec" font-weight="700" text-anchor="middle">TP</text>
+    <text x="48" y="440" font-size="9" fill="#eae5ec" font-weight="600">TPO Office</text>
+    <text x="48" y="451" font-size="9" fill="#837c92">tpo@campus.edu</text>
+    <text x="24" y="474" font-size="9" fill="#837c92">v0.1 &#183; hackathon build</text>
+
+    <!-- header row -->
+    <rect x="152" y="54" width="140" height="20" rx="10" fill="rgba(127,64,255,0.35)" filter="url(#blur3)"/>
+    <rect x="152" y="54" width="140" height="20" rx="10" fill="rgba(127,64,255,0.18)" stroke="#c2a4ff"/>
+    <text x="222" y="67" font-size="9" fill="#c2a4ff" font-weight="700" letter-spacing="1.2" text-anchor="middle">PLACEMENT PORTAL</text>
+    <text x="304" y="67" font-size="9" fill="#837c92">Four roles &#183; Masranix rapid round</text>
+
+    <!-- tech strip -->
+    <rect x="584" y="54" width="56" height="20" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="596" cy="64" r="2.5" fill="#c2a4ff"/>
+    <text x="604" y="67" font-size="9" fill="#eae5ec">Flask</text>
+    <rect x="644" y="54" width="80" height="20" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="656" cy="64" r="2.5" fill="#aa42ff"/>
+    <text x="664" y="67" font-size="9" fill="#eae5ec">Bootstrap</text>
+    <rect x="728" y="54" width="52" height="20" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="738" cy="64" r="2.5" fill="#6ee7a0"/>
+    <text x="745" y="67" font-size="9" fill="#eae5ec">SQLite</text>
+
+    <!-- role cards -->
+    <!-- Student -->
+    <rect x="152" y="84" width="151" height="76" rx="10" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="172" cy="106" r="12" fill="rgba(194,164,255,0.12)" stroke="rgba(194,164,255,0.35)"/>
+    <polygon points="164,105 172,100.5 180,105 172,109.5" fill="#c2a4ff"/>
+    <line x1="180" y1="105" x2="180" y2="111" stroke="#c2a4ff" stroke-width="1.2"/>
+    <text x="190" y="103" font-size="11" fill="#eae5ec" font-weight="600">Student</text>
+    <text x="190" y="116" font-size="9" fill="#837c92">apply to drives</text>
+    <line x1="164" y1="128" x2="291" y2="128" stroke="rgba(194,164,255,0.12)"/>
+    <text x="164" y="146" font-size="9" fill="#837c92"><tspan fill="#c2a4ff" font-weight="600">1,240</tspan> accounts &#183; resume upload</text>
+    <rect x="162" y="155" width="131" height="2" rx="1" fill="#c2a4ff" opacity="0.55"/>
+
+    <!-- Staff -->
+    <rect x="311" y="84" width="151" height="76" rx="10" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="331" cy="106" r="12" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)"/>
+    <path d="M326 106 l3.5 3.5 l7 -7" fill="none" stroke="#6ee7a0" stroke-width="1.8"/>
+    <text x="349" y="103" font-size="11" fill="#eae5ec" font-weight="600">Staff</text>
+    <text x="349" y="116" font-size="9" fill="#837c92">verify records</text>
+    <line x1="323" y1="128" x2="450" y2="128" stroke="rgba(194,164,255,0.12)"/>
+    <text x="323" y="146" font-size="9" fill="#837c92"><tspan fill="#6ee7a0" font-weight="600">86</tspan> verifiers &#183; marks &amp; docs</text>
+    <rect x="321" y="155" width="131" height="2" rx="1" fill="#6ee7a0" opacity="0.55"/>
+
+    <!-- TPO -->
+    <rect x="470" y="84" width="151" height="76" rx="10" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="490" cy="106" r="12" fill="rgba(170,66,255,0.14)" stroke="rgba(170,66,255,0.4)"/>
+    <rect x="483" y="103" width="14" height="9" rx="2" fill="none" stroke="#aa42ff" stroke-width="1.3"/>
+    <path d="M487 103 v-2.5 h6 v2.5" fill="none" stroke="#aa42ff" stroke-width="1.3"/>
+    <text x="508" y="103" font-size="11" fill="#eae5ec" font-weight="600">TPO</text>
+    <text x="508" y="116" font-size="9" fill="#837c92">manage drives</text>
+    <line x1="482" y1="128" x2="609" y2="128" stroke="rgba(194,164,255,0.12)"/>
+    <text x="482" y="146" font-size="9" fill="#837c92"><tspan fill="#aa42ff" font-weight="600">4</tspan> coordinators &#183; 12 drives</text>
+    <rect x="480" y="155" width="131" height="2" rx="1" fill="#aa42ff" opacity="0.55"/>
+
+    <!-- Admin -->
+    <rect x="629" y="84" width="151" height="76" rx="10" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="649" cy="106" r="12" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.35)"/>
+    <path d="M649 98.5 l6.5 2.6 v4.6 c0 3.6 -2.8 6 -6.5 7.4 c-3.7 -1.4 -6.5 -3.8 -6.5 -7.4 v-4.6 z" fill="none" stroke="#fbbf24" stroke-width="1.3"/>
+    <text x="667" y="103" font-size="11" fill="#eae5ec" font-weight="600">Admin</text>
+    <text x="667" y="116" font-size="9" fill="#837c92">approve onboarding</text>
+    <line x1="641" y1="128" x2="768" y2="128" stroke="rgba(194,164,255,0.12)"/>
+    <text x="641" y="146" font-size="9" fill="#837c92"><tspan fill="#fbbf24" font-weight="600">2</tspan> superusers &#183; audit log</text>
+    <rect x="639" y="155" width="131" height="2" rx="1" fill="#fbbf24" opacity="0.55"/>
+
+    <!-- stat card -->
+    <rect x="152" y="170" width="176" height="160" rx="12" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <text x="166" y="192" font-size="9" fill="#837c92" letter-spacing="1">PLACED 2025-26</text>
+    <text x="166" y="234" font-size="38" fill="#eae5ec" font-weight="700">128</text>
+    <rect x="166" y="242" width="98" height="16" rx="8" fill="rgba(110,231,160,0.10)" stroke="rgba(110,231,160,0.4)"/>
+    <polygon points="174,253 177,248 180,253" fill="#6ee7a0"/>
+    <text x="184" y="254" font-size="9" fill="#6ee7a0">+22 vs 2024-25</text>
+    <polygon points="164,304 176,296 188,300 200,290 212,294 224,284 236,288 248,278 260,283 272,270 284,275 296,262 308,268 316,258 316,314 164,314" fill="rgba(194,164,255,0.12)"/>
+    <polyline points="164,304 176,296 188,300 200,290 212,294 224,284 236,288 248,278 260,283 272,270 284,275 296,262 308,268 316,258" fill="none" stroke="#c2a4ff" stroke-width="1.5"/>
+    <circle cx="316" cy="258" r="2.5" fill="#c2a4ff"/>
+    <text x="166" y="278" font-size="9" fill="#837c92">offer rate 71%</text>
+
+    <!-- bar chart -->
+    <rect x="336" y="170" width="252" height="160" rx="12" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <text x="350" y="192" font-size="10" fill="#eae5ec" font-weight="600">Placements by Department</text>
+    <circle cx="524" cy="188" r="2.5" fill="#c2a4ff"/>
+    <text x="532" y="192" font-size="9" fill="#837c92">2025-26</text>
+    <line x1="356" y1="212" x2="576" y2="212" stroke="rgba(194,164,255,0.08)"/>
+    <line x1="356" y1="257" x2="576" y2="257" stroke="rgba(194,164,255,0.08)"/>
+    <line x1="356" y1="302" x2="576" y2="302" stroke="rgba(194,164,255,0.18)"/>
+    <text x="352" y="215" font-size="9" fill="#837c92" text-anchor="end">32</text>
+    <text x="352" y="260" font-size="9" fill="#837c92" text-anchor="end">16</text>
+    <text x="352" y="305" font-size="9" fill="#837c92" text-anchor="end">0</text>
+    <rect x="358" y="212" width="20" height="90" rx="3" fill="#7f40ff" opacity="0.6" filter="url(#blur6)"/>
+    <rect x="358" y="212" width="20" height="90" rx="3" fill="url(#barGrad)"/>
+    <rect x="388" y="235" width="20" height="67" rx="3" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="418" y="243" width="20" height="59" rx="3" fill="url(#barGrad)" opacity="0.85"/>
+    <rect x="448" y="254" width="20" height="48" rx="3" fill="url(#barGrad)" opacity="0.8"/>
+    <rect x="478" y="263" width="20" height="39" rx="3" fill="url(#barGrad)" opacity="0.75"/>
+    <rect x="508" y="271" width="20" height="31" rx="3" fill="url(#barGrad)" opacity="0.7"/>
+    <rect x="538" y="277" width="20" height="25" rx="3" fill="url(#barGrad)" opacity="0.65"/>
+    <g font-size="9" fill="#eae5ec" text-anchor="middle">
+      <text x="368" y="208">32</text>
+      <text x="398" y="231">24</text>
+      <text x="428" y="239">21</text>
+      <text x="458" y="250">17</text>
+      <text x="488" y="259">14</text>
+      <text x="518" y="267">11</text>
+      <text x="548" y="273">9</text>
+    </g>
+    <g font-size="9" fill="#837c92" text-anchor="middle">
+      <text x="368" y="316">CSE</text>
+      <text x="398" y="316">IT</text>
+      <text x="428" y="316">ECE</text>
+      <text x="458" y="316">AIML</text>
+      <text x="488" y="316">EEE</text>
+      <text x="518" y="316">MECH</text>
+      <text x="548" y="316">CIV</text>
+    </g>
+
+    <!-- active drives -->
+    <rect x="596" y="170" width="184" height="160" rx="12" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <text x="608" y="192" font-size="10" fill="#eae5ec" font-weight="600">Active Drives</text>
+    <text x="608" y="214" font-size="9" fill="#eae5ec">TechNova <tspan fill="#837c92">&#183; 6.5 LPA</tspan></text>
+    <rect x="722" y="203" width="46" height="14" rx="7" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.45)"/>
+    <text x="745" y="213" font-size="9" fill="#6ee7a0" text-anchor="middle">OPEN</text>
+    <line x1="606" y1="224" x2="770" y2="224" stroke="rgba(194,164,255,0.1)"/>
+    <text x="608" y="240" font-size="9" fill="#eae5ec">CodeWorks <tspan fill="#837c92">&#183; 4.2 LPA</tspan></text>
+    <rect x="722" y="229" width="46" height="14" rx="7" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.45)"/>
+    <text x="745" y="239" font-size="9" fill="#6ee7a0" text-anchor="middle">OPEN</text>
+    <line x1="606" y1="250" x2="770" y2="250" stroke="rgba(194,164,255,0.1)"/>
+    <text x="608" y="266" font-size="9" fill="#eae5ec">DataHive <tspan fill="#837c92">&#183; 8.0 LPA</tspan></text>
+    <rect x="722" y="255" width="46" height="14" rx="7" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.45)"/>
+    <text x="745" y="265" font-size="9" fill="#fbbf24" text-anchor="middle">SOON</text>
+    <line x1="606" y1="276" x2="770" y2="276" stroke="rgba(194,164,255,0.1)"/>
+    <text x="608" y="292" font-size="9" fill="#eae5ec">NexBank <tspan fill="#837c92">&#183; 5.5 LPA</tspan></text>
+    <rect x="722" y="281" width="46" height="14" rx="7" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.45)"/>
+    <text x="745" y="291" font-size="9" fill="#f87171" text-anchor="middle">FULL</text>
+    <text x="608" y="311" font-size="9" fill="#837c92">seats filled</text>
+    <text x="768" y="311" font-size="9" fill="#c2a4ff" text-anchor="end">68%</text>
+    <rect x="608" y="316" width="160" height="6" rx="3" fill="#0d0a12"/>
+    <rect x="608" y="316" width="109" height="6" rx="3" fill="url(#accentGrad)"/>
+
+    <!-- approvals queue -->
+    <rect x="152" y="338" width="436" height="126" rx="12" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <text x="166" y="359" font-size="10" fill="#eae5ec" font-weight="600">Approvals Queue</text>
+    <rect x="286" y="347" width="70" height="15" rx="7.5" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.45)"/>
+    <text x="321" y="358" font-size="9" fill="#fbbf24" text-anchor="middle">4 PENDING</text>
+    <g font-size="9" fill="#837c92" letter-spacing="0.8">
+      <text x="180" y="376">NAME</text>
+      <text x="258" y="376">ROLL NO</text>
+      <text x="338" y="376">DEPT</text>
+      <text x="436" y="376">ACTION</text>
+    </g>
+    <line x1="164" y1="382" x2="576" y2="382" stroke="rgba(194,164,255,0.14)"/>
+
+    <circle cx="170" cy="391" r="4" fill="#c2a4ff" opacity="0.7"/>
+    <text x="180" y="394" font-size="9" fill="#eae5ec">Aarav N</text>
+    <text x="258" y="394" font-size="9" fill="#837c92">21CS042</text>
+    <text x="338" y="394" font-size="9" fill="#eae5ec">CSE</text>
+    <rect x="436" y="383" width="56" height="16" rx="8" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.5)"/>
+    <text x="464" y="394" font-size="9" fill="#6ee7a0" text-anchor="middle">Approve</text>
+    <rect x="498" y="383" width="50" height="16" rx="8" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.5)"/>
+    <text x="523" y="394" font-size="9" fill="#f87171" text-anchor="middle">Reject</text>
+    <line x1="164" y1="405" x2="576" y2="405" stroke="rgba(194,164,255,0.08)"/>
+
+    <circle cx="170" cy="415" r="4" fill="#aa42ff" opacity="0.7"/>
+    <text x="180" y="418" font-size="9" fill="#eae5ec">Meera K</text>
+    <text x="258" y="418" font-size="9" fill="#837c92">21EC017</text>
+    <text x="338" y="418" font-size="9" fill="#eae5ec">ECE</text>
+    <rect x="436" y="407" width="56" height="16" rx="8" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.5)"/>
+    <text x="464" y="418" font-size="9" fill="#6ee7a0" text-anchor="middle">Approve</text>
+    <rect x="498" y="407" width="50" height="16" rx="8" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.5)"/>
+    <text x="523" y="418" font-size="9" fill="#f87171" text-anchor="middle">Reject</text>
+    <line x1="164" y1="429" x2="576" y2="429" stroke="rgba(194,164,255,0.08)"/>
+
+    <circle cx="170" cy="439" r="4" fill="#6ee7a0" opacity="0.7"/>
+    <text x="180" y="442" font-size="9" fill="#eae5ec">Rahul S</text>
+    <text x="258" y="442" font-size="9" fill="#837c92">22IT103</text>
+    <text x="338" y="442" font-size="9" fill="#eae5ec">IT</text>
+    <rect x="436" y="431" width="56" height="16" rx="8" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.5)"/>
+    <text x="464" y="442" font-size="9" fill="#6ee7a0" text-anchor="middle">Approve</text>
+    <rect x="498" y="431" width="50" height="16" rx="8" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.5)"/>
+    <text x="523" y="442" font-size="9" fill="#f87171" text-anchor="middle">Reject</text>
+    <text x="180" y="458" font-size="9" fill="#837c92">+1 more awaiting document verification</text>
+
+    <!-- 40-min build log -->
+    <rect x="596" y="338" width="184" height="126" rx="12" fill="url(#panelGrad)" stroke="rgba(194,164,255,0.18)"/>
+    <circle cx="613" cy="355" r="5" fill="none" stroke="#fbbf24" stroke-width="1.3"/>
+    <line x1="611" y1="347.5" x2="615" y2="347.5" stroke="#fbbf24" stroke-width="1.3"/>
+    <line x1="613" y1="355" x2="616" y2="352" stroke="#fbbf24" stroke-width="1.1"/>
+    <text x="624" y="359" font-size="10" fill="#eae5ec" font-weight="600">40-min build log</text>
+    <text x="608" y="379" font-size="9" fill="#837c92"><tspan fill="#c2a4ff" font-weight="600">0-10</tspan>   models + schema</text>
+    <text x="608" y="395" font-size="9" fill="#837c92"><tspan fill="#c2a4ff" font-weight="600">10-25</tspan>  auth + role routes</text>
+    <text x="608" y="411" font-size="9" fill="#837c92"><tspan fill="#c2a4ff" font-weight="600">25-35</tspan>  Bootstrap UI</text>
+    <text x="608" y="427" font-size="9" fill="#837c92"><tspan fill="#c2a4ff" font-weight="600">35-40</tspan>  seed data + demo</text>
+    <rect x="608" y="436" width="160" height="6" rx="3" fill="#0d0a12"/>
+    <rect x="608" y="436" width="160" height="6" rx="3" fill="url(#accentGrad)"/>
+    <text x="608" y="457" font-size="9" fill="#6ee7a0">Shipped &#183; 2nd place &#183; Masranix</text>
+
+    <!-- footer -->
+    <text x="152" y="479" font-size="9" fill="#837c92">placement.db &#183; SQLite 3 &#183; 6 tables &#183; 1.4 MB</text>
+    <text x="780" y="479" font-size="9" fill="#837c92" text-anchor="end">Flask 3.0 &#183; Jinja2 &#183; Bootstrap 5.3</text>
+  </g>
+</svg>

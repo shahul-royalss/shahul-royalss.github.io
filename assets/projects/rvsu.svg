@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <radialGradient id="gA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#7f40ff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aa42ff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#aa42ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gBuild" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241a3a"/>
+      <stop offset="100%" stop-color="#16121e"/>
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f40ff"/>
+      <stop offset="100%" stop-color="#aa42ff"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#aa42ff"/>
+      <stop offset="100%" stop-color="#7f40ff"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1" fill="#c2a4ff" opacity="0.05"/>
+    </pattern>
+    <filter id="blurBig" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="blurSoft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="800" height="500" fill="#0d0a12"/>
+  <rect x="0" y="0" width="800" height="500" fill="url(#dots)"/>
+  <circle cx="610" cy="60" r="240" fill="url(#gA)"/>
+  <circle cx="120" cy="470" r="210" fill="url(#gB)"/>
+
+  <!-- header badge + captions -->
+  <rect x="28" y="20" width="124" height="24" rx="12" fill="rgba(127,64,255,0.16)" stroke="rgba(194,164,255,0.35)" stroke-width="1"/>
+  <circle cx="44" cy="32" r="3" fill="#6ee7a0"/>
+  <text x="54" y="36" font-size="10" font-weight="700" letter-spacing="2" fill="#c2a4ff">RVSU.ORG</text>
+  <text x="166" y="36" font-size="10" fill="#837c92">University website — built and launched end-to-end</text>
+  <text x="776" y="36" font-size="9" letter-spacing="1" fill="#837c92" text-anchor="end">PRODUCTION · HOSTINGER · 2026</text>
+
+  <!-- browser ambient shadow -->
+  <rect x="40" y="70" width="524" height="400" rx="14" fill="#7f40ff" opacity="0.16" filter="url(#blurBig)"/>
+
+  <!-- ============ BROWSER WINDOW ============ -->
+  <rect x="28" y="56" width="548" height="414" rx="12" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <line x1="40" y1="57" x2="564" y2="57" stroke="rgba(194,164,255,0.22)" stroke-width="1"/>
+
+  <!-- chrome bar -->
+  <circle cx="46" cy="73" r="4.5" fill="#f87171"/>
+  <circle cx="60" cy="73" r="4.5" fill="#fbbf24"/>
+  <circle cx="74" cy="73" r="4.5" fill="#6ee7a0"/>
+  <rect x="96" y="64" width="316" height="19" rx="9.5" fill="#0d0a12" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="106.5" y="71.5" width="7" height="5.5" rx="1" fill="#6ee7a0"/>
+  <path d="M108 71.5 v-1.6 a2 2 0 0 1 4 0 v1.6" fill="none" stroke="#6ee7a0" stroke-width="1.2"/>
+  <text x="122" y="77.5" font-size="10"><tspan fill="#837c92">https://</tspan><tspan fill="#eae5ec" font-weight="600">rvsu.org</tspan></text>
+  <circle cx="536" cy="73" r="6.5" fill="rgba(170,66,255,0.28)" stroke="rgba(194,164,255,0.4)" stroke-width="1"/>
+  <text x="536" y="76.5" font-size="9" font-weight="700" fill="#c2a4ff" text-anchor="middle">D</text>
+  <circle cx="552" cy="73" r="1.6" fill="#837c92"/>
+  <circle cx="558" cy="73" r="1.6" fill="#837c92"/>
+  <circle cx="564" cy="73" r="1.6" fill="#837c92"/>
+  <line x1="28" y1="90" x2="576" y2="90" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+
+  <!-- site nav -->
+  <rect x="44" y="101" width="20" height="20" rx="6" fill="url(#logoGrad)"/>
+  <text x="54" y="115" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+  <text x="70" y="115" font-size="10" font-weight="700" fill="#eae5ec">RVS University</text>
+  <text x="252" y="114" font-size="9" font-weight="600" fill="#c2a4ff">Admissions</text>
+  <rect x="252" y="118" width="48" height="2" rx="1" fill="#c2a4ff"/>
+  <text x="316" y="114" font-size="9" fill="#837c92">Academics</text>
+  <text x="380" y="114" font-size="9" fill="#837c92">Results</text>
+  <text x="428" y="114" font-size="9" fill="#837c92">Campus</text>
+  <rect x="496" y="100" width="64" height="21" rx="10.5" fill="url(#ctaGrad)"/>
+  <text x="528" y="114" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Apply</text>
+
+  <!-- hero -->
+  <rect x="44" y="130" width="516" height="104" rx="10" fill="url(#heroGrad)" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="60" y="144" width="144" height="17" rx="8.5" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+  <text x="132" y="156" font-size="9" font-weight="700" letter-spacing="1" fill="#fbbf24" text-anchor="middle">ADMISSIONS OPEN 2026</text>
+  <text x="60" y="183" font-size="22" font-weight="700" fill="#eae5ec">RVS University</text>
+  <text x="60" y="199" font-size="9" fill="#837c92">UG · PG · Diploma programmes · Apply for the 2026 academic session</text>
+  <rect x="62" y="208" width="88" height="20" rx="8" fill="#7f40ff" opacity="0.55" filter="url(#blurSoft)"/>
+  <rect x="60" y="206" width="88" height="20" rx="8" fill="url(#ctaGrad)"/>
+  <text x="104" y="219.5" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Apply Now →</text>
+  <rect x="156" y="206" width="98" height="20" rx="8" fill="none" stroke="rgba(194,164,255,0.35)" stroke-width="1"/>
+  <text x="205" y="219.5" font-size="9" font-weight="600" fill="#c2a4ff" text-anchor="middle">View Programs</text>
+  <!-- hero campus illustration -->
+  <circle cx="480" cy="180" r="52" fill="url(#gBuild)"/>
+  <polygon points="445,160 515,160 480,140" fill="rgba(127,64,255,0.14)" stroke="rgba(194,164,255,0.5)" stroke-width="1"/>
+  <circle cx="480" cy="153" r="3" fill="#c2a4ff" opacity="0.8"/>
+  <rect x="448" y="163" width="64" height="4" fill="rgba(194,164,255,0.25)"/>
+  <rect x="448" y="167" width="64" height="55" fill="rgba(127,64,255,0.10)" stroke="rgba(194,164,255,0.45)" stroke-width="1"/>
+  <rect x="454" y="171" width="6" height="51" fill="rgba(194,164,255,0.30)"/>
+  <rect x="470" y="171" width="6" height="51" fill="rgba(194,164,255,0.30)"/>
+  <rect x="486" y="171" width="6" height="51" fill="rgba(194,164,255,0.30)"/>
+  <rect x="502" y="171" width="6" height="51" fill="rgba(194,164,255,0.30)"/>
+  <rect x="440" y="222" width="80" height="4" rx="1" fill="rgba(194,164,255,0.35)"/>
+  <rect x="434" y="226" width="92" height="4" rx="1" fill="rgba(194,164,255,0.22)"/>
+  <line x1="480" y1="140" x2="480" y2="128" stroke="rgba(194,164,255,0.6)" stroke-width="1"/>
+  <polygon points="480,128 492,131 480,134" fill="#aa42ff"/>
+  <circle cx="430" cy="150" r="1.5" fill="#c2a4ff" opacity="0.7"/>
+  <circle cx="540" cy="170" r="1.5" fill="#c2a4ff" opacity="0.5"/>
+  <circle cx="527" cy="145" r="1.5" fill="#aa42ff" opacity="0.7"/>
+
+  <!-- service cards -->
+  <rect x="44" y="242" width="164" height="74" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <circle cx="66" cy="264" r="10" fill="rgba(127,64,255,0.18)" stroke="rgba(194,164,255,0.3)" stroke-width="1"/>
+  <path d="M61.5 264 l3 3.5 l6 -7" fill="none" stroke="#6ee7a0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="268" font-size="10" font-weight="700" fill="#eae5ec">Exam Results</text>
+  <text x="190" y="268" font-size="10" font-weight="700" fill="#c2a4ff" text-anchor="end">→</text>
+  <text x="58" y="288" font-size="9" fill="#837c92">Semester results, revaluation</text>
+  <text x="58" y="300" font-size="9" fill="#837c92">and grade cards online.</text>
+
+  <rect x="220" y="242" width="164" height="74" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <circle cx="242" cy="264" r="10" fill="rgba(127,64,255,0.18)" stroke="rgba(194,164,255,0.3)" stroke-width="1"/>
+  <polygon points="242,258.5 250,262 242,265.5 234,262" fill="#c2a4ff"/>
+  <path d="M237 263.5 v4.5 q5 3.5 10 0 v-4.5" fill="none" stroke="#c2a4ff" stroke-width="1.2"/>
+  <text x="260" y="268" font-size="10" font-weight="700" fill="#eae5ec">Programs</text>
+  <text x="366" y="268" font-size="10" font-weight="700" fill="#c2a4ff" text-anchor="end">→</text>
+  <text x="234" y="288" font-size="9" fill="#837c92">30+ UG, PG and diploma</text>
+  <text x="234" y="300" font-size="9" fill="#837c92">courses in 12 departments.</text>
+
+  <rect x="396" y="242" width="164" height="74" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <circle cx="418" cy="264" r="10" fill="rgba(127,64,255,0.18)" stroke="rgba(194,164,255,0.3)" stroke-width="1"/>
+  <circle cx="418" cy="261" r="2.6" fill="none" stroke="#fbbf24" stroke-width="1.4"/>
+  <path d="M412.5 269.5 a5.5 5 0 0 1 11 0" fill="none" stroke="#fbbf24" stroke-width="1.4"/>
+  <text x="436" y="268" font-size="10" font-weight="700" fill="#eae5ec">Student Services</text>
+  <text x="542" y="268" font-size="10" font-weight="700" fill="#c2a4ff" text-anchor="end">→</text>
+  <text x="410" y="288" font-size="9" fill="#837c92">Scholarships, hostel, library</text>
+  <text x="410" y="300" font-size="9" fill="#837c92">and placement support.</text>
+
+  <!-- stats strip -->
+  <rect x="44" y="324" width="516" height="36" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="130" y="347" font-size="14" font-weight="700" fill="#c2a4ff" text-anchor="middle">12 <tspan font-size="9" font-weight="400" fill="#837c92">Departments</tspan></text>
+  <line x1="216" y1="332" x2="216" y2="352" stroke="rgba(194,164,255,0.15)" stroke-width="1"/>
+  <text x="302" y="347" font-size="14" font-weight="700" fill="#c2a4ff" text-anchor="middle">4800+ <tspan font-size="9" font-weight="400" fill="#837c92">Students</tspan></text>
+  <line x1="388" y1="332" x2="388" y2="352" stroke="rgba(194,164,255,0.15)" stroke-width="1"/>
+  <text x="474" y="347" font-size="14" font-weight="700" fill="#c2a4ff" text-anchor="middle">30+ <tspan font-size="9" font-weight="400" fill="#837c92">Programs</tspan></text>
+
+  <!-- notices panel -->
+  <rect x="44" y="368" width="336" height="46" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="58" y="381" font-size="9" font-weight="700" letter-spacing="1" fill="#837c92">LATEST NOTICES</text>
+  <rect x="330" y="372" width="40" height="13" rx="6.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)" stroke-width="1"/>
+  <text x="350" y="381.5" font-size="9" font-weight="700" fill="#6ee7a0" text-anchor="middle">3 NEW</text>
+  <circle cx="62" cy="392" r="2" fill="#c2a4ff"/>
+  <text x="70" y="395" font-size="9" fill="#eae5ec">Odd semester exam timetable released</text>
+  <text x="366" y="395" font-size="9" fill="#837c92" text-anchor="end">Aug 04</text>
+  <circle cx="62" cy="404" r="2" fill="#fbbf24"/>
+  <text x="70" y="407" font-size="9" fill="#eae5ec">UG merit list 2026 published — round 2</text>
+  <text x="366" y="407" font-size="9" fill="#837c92" text-anchor="end">Jul 28</text>
+
+  <!-- applications sparkline panel -->
+  <rect x="392" y="368" width="168" height="46" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="402" y="381" font-size="9" font-weight="700" letter-spacing="0.5" fill="#837c92">APPLICATIONS · 30D</text>
+  <text x="550" y="381" font-size="11" font-weight="700" fill="#eae5ec" text-anchor="end">1,284</text>
+  <polygon points="402,404 414,400 426,402 438,396 450,399 462,392 474,395 486,388 498,392 510,384 522,388 534,381 548,377 548,409 402,409" fill="rgba(127,64,255,0.18)"/>
+  <polyline points="402,404 414,400 426,402 438,396 450,399 462,392 474,395 486,388 498,392 510,384 522,388 534,381 548,377" fill="none" stroke="#c2a4ff" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="548" cy="377" r="2.2" fill="#c2a4ff"/>
+
+  <!-- footer bar -->
+  <rect x="44" y="422" width="516" height="32" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="58" y="432" width="12" height="12" rx="3" fill="url(#logoGrad)"/>
+  <text x="76" y="441.5" font-size="9" fill="#837c92">© 2026 RVS University · Chittoor, Andhra Pradesh</text>
+  <text x="546" y="441.5" font-size="9" fill="#837c92" text-anchor="end">Privacy · <tspan fill="#c2a4ff">Contact</tspan> · NAAC · UGC</text>
+
+  <!-- scrollbar -->
+  <rect x="568" y="96" width="3" height="366" rx="1.5" fill="rgba(194,164,255,0.08)"/>
+  <rect x="568" y="100" width="3" height="92" rx="1.5" fill="rgba(194,164,255,0.30)"/>
+
+  <!-- ============ RIGHT RAIL ============ -->
+  <!-- lighthouse card -->
+  <rect x="590" y="56" width="186" height="76" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="602" y="71" font-size="9" font-weight="700" letter-spacing="1" fill="#837c92">LIGHTHOUSE AUDIT</text>
+  <circle cx="618" cy="96" r="14" fill="none" stroke="rgba(110,231,160,0.15)" stroke-width="3"/>
+  <circle cx="618" cy="96" r="14" fill="none" stroke="#6ee7a0" stroke-width="3" stroke-linecap="round" stroke-dasharray="86.2 87.96" transform="rotate(-90 618 96)"/>
+  <text x="618" y="100" font-size="11" font-weight="700" fill="#6ee7a0" text-anchor="middle">98</text>
+  <circle cx="668" cy="96" r="9" fill="none" stroke="rgba(110,231,160,0.15)" stroke-width="2.5"/>
+  <circle cx="668" cy="96" r="9" fill="none" stroke="#6ee7a0" stroke-width="2.5"/>
+  <text x="668" y="99" font-size="9" font-weight="700" fill="#eae5ec" text-anchor="middle">100</text>
+  <circle cx="708" cy="96" r="9" fill="none" stroke="rgba(110,231,160,0.15)" stroke-width="2.5"/>
+  <circle cx="708" cy="96" r="9" fill="none" stroke="#6ee7a0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="54.3 56.55" transform="rotate(-90 708 96)"/>
+  <text x="708" y="99" font-size="9" font-weight="700" fill="#eae5ec" text-anchor="middle">96</text>
+  <circle cx="748" cy="96" r="9" fill="none" stroke="rgba(110,231,160,0.15)" stroke-width="2.5"/>
+  <circle cx="748" cy="96" r="9" fill="none" stroke="#6ee7a0" stroke-width="2.5"/>
+  <text x="748" y="99" font-size="9" font-weight="700" fill="#eae5ec" text-anchor="middle">100</text>
+  <text x="618" y="122" font-size="9" fill="#837c92" text-anchor="middle">PERF</text>
+  <text x="668" y="122" font-size="9" fill="#837c92" text-anchor="middle">A11Y</text>
+  <text x="708" y="122" font-size="9" fill="#837c92" text-anchor="middle">BP</text>
+  <text x="748" y="122" font-size="9" fill="#837c92" text-anchor="middle">SEO</text>
+
+  <!-- hostinger dns card -->
+  <rect x="590" y="140" width="186" height="108" rx="10" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="602" y="156" font-size="9" font-weight="700" letter-spacing="0.5" fill="#837c92">HOSTINGER — DNS</text>
+  <rect x="700" y="145" width="66" height="14" rx="7" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)" stroke-width="1"/>
+  <text x="733" y="155" font-size="9" font-weight="600" fill="#6ee7a0" text-anchor="middle">PROPAGATED</text>
+  <g font-family="Consolas, monospace" font-size="9">
+    <text x="602" y="173" fill="#c2a4ff">A</text><text x="640" y="173" fill="#837c92">@</text><text x="664" y="173" fill="#eae5ec">84.32.84.32</text>
+    <text x="602" y="187" fill="#c2a4ff">CNAME</text><text x="640" y="187" fill="#837c92">www</text><text x="664" y="187" fill="#eae5ec">rvsu.org</text>
+    <text x="602" y="201" fill="#c2a4ff">MX</text><text x="640" y="201" fill="#837c92">@</text><text x="664" y="201" fill="#eae5ec">mx1.hostinger.com</text>
+    <text x="602" y="215" fill="#c2a4ff">TXT</text><text x="640" y="215" fill="#837c92">@</text><text x="664" y="215" fill="#eae5ec">v=spf1 ~all</text>
+    <text x="602" y="229" fill="#c2a4ff">NS</text><text x="640" y="229" fill="#837c92">@</text><text x="664" y="229" fill="#eae5ec">ns1.dns-parking.com</text>
+  </g>
+  <line x1="600" y1="235" x2="766" y2="235" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+  <circle cx="605" cy="242" r="2" fill="#6ee7a0"/>
+  <text x="612" y="245" font-size="9" fill="#837c92">TTL 14400 · 5 records · zone healthy</text>
+
+  <!-- deploy terminal -->
+  <rect x="590" y="256" width="186" height="118" rx="10" fill="#0d0a12" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <circle cx="603" cy="267" r="2.5" fill="#f87171"/>
+  <circle cx="612" cy="267" r="2.5" fill="#fbbf24"/>
+  <circle cx="621" cy="267" r="2.5" fill="#6ee7a0"/>
+  <text x="632" y="270" font-size="9" fill="#837c92" font-family="Consolas, monospace">deploy@rvsu — ssh</text>
+  <line x1="590" y1="276" x2="776" y2="276" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="9">
+    <text x="602" y="290"><tspan fill="#c2a4ff">$</tspan><tspan fill="#eae5ec"> ./deploy.sh --prod</tspan></text>
+    <text x="602" y="303" fill="#6ee7a0">✓ build assets · 1.2s</text>
+    <text x="602" y="316" fill="#6ee7a0">✓ 148 files synced</text>
+    <text x="602" y="329" fill="#6ee7a0">✓ SSL — Let's Encrypt A+</text>
+    <text x="602" y="342" fill="#6ee7a0">✓ cache purged · CDN warm</text>
+    <text x="602" y="355" fill="#c2a4ff" font-weight="700">→ live: https://rvsu.org</text>
+    <text x="602" y="368" fill="#c2a4ff">$</text>
+  </g>
+  <rect x="612" y="360" width="5" height="9" fill="#c2a4ff" opacity="0.85"/>
+
+  <!-- status chips -->
+  <rect x="590" y="384" width="64" height="26" rx="13" fill="rgba(110,231,160,0.10)" stroke="rgba(110,231,160,0.4)" stroke-width="1"/>
+  <circle cx="606" cy="397" r="3" fill="#6ee7a0"/>
+  <circle cx="606" cy="397" r="5.5" fill="none" stroke="#6ee7a0" stroke-width="1" opacity="0.4"/>
+  <circle cx="606" cy="397" r="8" fill="none" stroke="#6ee7a0" stroke-width="1" opacity="0.15"/>
+  <text x="618" y="400.5" font-size="9" font-weight="700" letter-spacing="1" fill="#6ee7a0">LIVE</text>
+  <rect x="662" y="384" width="114" height="26" rx="13" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="719" y="400.5" font-size="9" text-anchor="middle"><tspan fill="#837c92">UPTIME </tspan><tspan fill="#eae5ec" font-weight="700">99.98%</tspan></text>
+  <rect x="590" y="418" width="62" height="26" rx="13" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="621" y="434.5" font-size="9" font-weight="700" fill="#6ee7a0" text-anchor="middle">SSL A+</text>
+  <rect x="660" y="418" width="116" height="26" rx="13" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="718" y="434.5" font-size="9" fill="#837c92" text-anchor="middle">LITESPEED · HTTP/3</text>
+  <rect x="590" y="452" width="186" height="24" rx="12" fill="rgba(127,64,255,0.14)" stroke="rgba(194,164,255,0.3)" stroke-width="1"/>
+  <circle cx="606" cy="464" r="3" fill="#fbbf24"/>
+  <text x="616" y="467.5" font-size="9" font-weight="600" letter-spacing="0.5" fill="#c2a4ff">LAUNCHED · JAN 2026</text>
+
+  <!-- bottom tech chips -->
+  <rect x="28" y="476" width="46" height="19" rx="9.5" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="51" y="489" font-size="9" fill="#837c92" text-anchor="middle">HTML5</text>
+  <rect x="82" y="476" width="40" height="19" rx="9.5" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="102" y="489" font-size="9" fill="#837c92" text-anchor="middle">CSS3</text>
+  <rect x="130" y="476" width="78" height="19" rx="9.5" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="169" y="489" font-size="9" fill="#837c92" text-anchor="middle">JAVASCRIPT</text>
+  <rect x="216" y="476" width="78" height="19" rx="9.5" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="255" y="489" font-size="9" fill="#837c92" text-anchor="middle">RESPONSIVE</text>
+  <rect x="302" y="476" width="92" height="19" rx="9.5" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="348" y="489" font-size="9" fill="#837c92" text-anchor="middle">SEO OPTIMIZED</text>
+  <rect x="402" y="476" width="104" height="19" rx="9.5" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="454" y="489" font-size="9" fill="#c2a4ff" text-anchor="middle">HOSTINGER · DNS</text>
+</svg>

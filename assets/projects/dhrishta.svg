@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="dhrishtaerf.org project cover">
+  <defs>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#7f40ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aa42ff" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#aa42ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#aa42ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f40ff"/>
+      <stop offset="100%" stop-color="#aa42ff"/>
+    </linearGradient>
+    <linearGradient id="headGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2a4ff"/>
+      <stop offset="100%" stop-color="#aa42ff"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c2a4ff"/>
+      <stop offset="100%" stop-color="#7f40ff"/>
+    </linearGradient>
+    <linearGradient id="bandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1524"/>
+      <stop offset="50%" stop-color="#16121e"/>
+      <stop offset="100%" stop-color="#1a1524"/>
+    </linearGradient>
+    <filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="fGlowSoft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="rgba(194,164,255,0.07)"/>
+    </pattern>
+  </defs>
+
+  <!-- page background -->
+  <rect x="0" y="0" width="800" height="500" fill="#0d0a12"/>
+  <rect x="0" y="0" width="800" height="500" fill="url(#dots)"/>
+  <ellipse cx="150" cy="70" rx="290" ry="180" fill="url(#glowA)"/>
+  <ellipse cx="680" cy="440" rx="300" ry="190" fill="url(#glowB)"/>
+  <ellipse cx="430" cy="250" rx="380" ry="230" fill="url(#glowA)" opacity="0.5"/>
+
+  <!-- corner brackets + side ticks -->
+  <g stroke="rgba(194,164,255,0.35)" stroke-width="1" fill="none">
+    <path d="M10,22 V10 H22"/><path d="M778,10 H790 V22"/>
+    <path d="M10,478 V490 H22"/><path d="M790,478 V490 H778"/>
+  </g>
+  <g stroke="rgba(194,164,255,0.18)" stroke-width="1">
+    <path d="M34,156 v8 M30,160 h8"/>
+    <path d="M34,336 v8 M30,340 h8"/>
+    <path d="M766,146 v8 M762,150 h8"/>
+    <path d="M766,356 v8 M762,360 h8"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <!-- project pill badge + top labels -->
+    <rect x="20" y="13" width="104" height="18" rx="9" fill="rgba(127,64,255,0.14)" stroke="rgba(194,164,255,0.45)" stroke-width="1"/>
+    <text x="72" y="25.5" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="1.2" fill="#c2a4ff">DHRISHTA ERF</text>
+    <text x="134" y="25.5" font-size="9" fill="#837c92">dhrishtaerf.org — CSR education non-profit</text>
+    <rect x="576" y="13" width="100" height="18" rx="9" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <text x="626" y="25.5" text-anchor="middle" font-size="9" fill="#837c92">HTML · CSS · JS</text>
+    <rect x="684" y="13" width="96" height="18" rx="9" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <text x="732" y="25.5" text-anchor="middle" font-size="9" fill="#6ee7a0">LIGHTHOUSE 98</text>
+
+    <!-- ===== browser window ===== -->
+    <rect x="48" y="40" width="704" height="430" rx="12" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <path d="M48,70 v-18 a12,12 0 0 1 12,-12 h680 a12,12 0 0 1 12,12 v18 z" fill="#1a1524"/>
+    <path d="M60,40.5 h680" stroke="rgba(194,164,255,0.22)" stroke-width="1"/>
+    <line x1="48" y1="70" x2="752" y2="70" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+
+    <!-- traffic dots -->
+    <circle cx="66" cy="55" r="4" fill="#f87171"/>
+    <circle cx="80" cy="55" r="4" fill="#fbbf24"/>
+    <circle cx="94" cy="55" r="4" fill="#6ee7a0"/>
+
+    <!-- nav chevrons + refresh -->
+    <g stroke="#837c92" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M124,50 l-5,5 5,5"/>
+      <path d="M134,50 l5,5 -5,5"/>
+      <path d="M152,51.5 a4.5,4.5 0 1 1 -4.5,-1.5"/>
+      <path d="M147,48.5 l0.8,2.2 -2.3,0.6"/>
+    </g>
+
+    <!-- URL bar -->
+    <rect x="162" y="47" width="288" height="16" rx="8" fill="#0d0a12" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <rect x="171" y="53.5" width="6.5" height="5" rx="1" fill="none" stroke="#6ee7a0" stroke-width="1"/>
+    <path d="M172.6,53.5 v-1.4 a1.7,1.7 0 0 1 3.4,0 v1.4" fill="none" stroke="#6ee7a0" stroke-width="1"/>
+    <text x="183" y="58.7" font-size="9" fill="#837c92">https://<tspan fill="#eae5ec">dhrishtaerf.org</tspan></text>
+    <polygon points="438,50.5 439.3,53.4 442.4,53.7 440.1,55.8 440.8,58.8 438,57.2 435.2,58.8 435.9,55.8 433.6,53.7 436.7,53.4" fill="rgba(194,164,255,0.5)"/>
+    <text x="462" y="58.7" font-size="9" fill="#837c92">Dhrishta ERF — Skills, Dignity, Livelihoods</text>
+
+    <!-- chrome right icons -->
+    <g stroke="#837c92" stroke-width="1.2" stroke-linecap="round">
+      <line x1="706" y1="51" x2="718" y2="51"/>
+      <line x1="706" y1="55" x2="718" y2="55"/>
+      <line x1="706" y1="59" x2="718" y2="59"/>
+    </g>
+    <circle cx="734" cy="55" r="6" fill="url(#avGrad)"/>
+
+    <!-- scrollbar -->
+    <rect x="744.5" y="76" width="3.5" height="386" rx="1.75" fill="rgba(194,164,255,0.08)"/>
+    <rect x="744.5" y="76" width="3.5" height="88" rx="1.75" fill="rgba(194,164,255,0.35)"/>
+
+    <!-- ===== site nav ===== -->
+    <circle cx="76" cy="88" r="8" fill="url(#ctaGrad)"/>
+    <text x="76" y="91.5" text-anchor="middle" font-size="9" font-weight="700" fill="#eae5ec">D</text>
+    <text x="90" y="86.5" font-size="10.5" font-weight="700" fill="#eae5ec">DHRISHTA ERF</text>
+    <text x="90" y="97.5" font-size="9" fill="#837c92">Educational &amp; Research Foundation</text>
+    <text x="430" y="91.5" text-anchor="middle" font-size="9.5" fill="#837c92">Home</text>
+    <text x="482" y="91.5" text-anchor="middle" font-size="9.5" font-weight="600" fill="#c2a4ff">Programs</text>
+    <rect x="466" y="96" width="32" height="2" rx="1" fill="#7f40ff"/>
+    <text x="530" y="91.5" text-anchor="middle" font-size="9.5" fill="#837c92">Impact</text>
+    <text x="574" y="91.5" text-anchor="middle" font-size="9.5" fill="#837c92">Stories</text>
+    <text x="620" y="91.5" text-anchor="middle" font-size="9.5" fill="#837c92">Contact</text>
+    <rect x="652" y="79" width="64" height="19" rx="9.5" fill="rgba(251,191,36,0.08)" stroke="#fbbf24" stroke-width="1"/>
+    <text x="684" y="91.5" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fbbf24">Donate</text>
+    <line x1="48" y1="106" x2="752" y2="106" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+
+    <!-- ===== hero left ===== -->
+    <rect x="64" y="114" width="180" height="16" rx="8" fill="rgba(127,64,255,0.12)" stroke="rgba(194,164,255,0.30)" stroke-width="1"/>
+    <circle cx="74" cy="122" r="2.5" fill="#6ee7a0"/>
+    <text x="82" y="125.5" font-size="9" letter-spacing="0.6" fill="#c2a4ff">SECTION-8 NON-PROFIT · EST 2021</text>
+    <text x="64" y="158" font-size="25" font-weight="700" fill="#eae5ec">Skills. Dignity.</text>
+    <text x="64" y="186" font-size="25" font-weight="700" fill="url(#headGrad)">Livelihoods.</text>
+    <text x="64" y="201" font-size="10" fill="#837c92">CSR-funded skilling &amp; job placement for rural women across 35 villages.</text>
+    <rect x="64" y="208" width="100" height="21" rx="10.5" fill="url(#ctaGrad)" filter="url(#fGlow)"/>
+    <text x="114" y="221.5" text-anchor="middle" font-size="10" font-weight="700" fill="#eae5ec">Our Programs</text>
+    <rect x="172" y="208" width="104" height="21" rx="10.5" fill="none" stroke="rgba(194,164,255,0.45)" stroke-width="1"/>
+    <text x="224" y="221.5" text-anchor="middle" font-size="9.5" fill="#c2a4ff">Partner With Us</text>
+    <text x="290" y="221.5" font-size="9" fill="#837c92">80G &amp; 12A certified</text>
+
+    <!-- ===== hero right: chart card ===== -->
+    <rect x="452" y="112" width="284" height="118" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <text x="464" y="130" font-size="9.5" font-weight="600" fill="#eae5ec">Placements per quarter</text>
+    <rect x="656" y="118" width="68" height="15" rx="7.5" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)" stroke-width="1"/>
+    <text x="690" y="129" text-anchor="middle" font-size="9" fill="#6ee7a0">▲ 18% YoY</text>
+    <g stroke="rgba(194,164,255,0.10)" stroke-width="1">
+      <line x1="478" y1="148" x2="724" y2="148"/>
+      <line x1="478" y1="168" x2="724" y2="168"/>
+      <line x1="478" y1="188" x2="724" y2="188"/>
+      <line x1="478" y1="206" x2="724" y2="206"/>
+    </g>
+    <text x="472" y="151" text-anchor="end" font-size="9" fill="#837c92">90</text>
+    <text x="472" y="171" text-anchor="end" font-size="9" fill="#837c92">60</text>
+    <text x="472" y="191" text-anchor="end" font-size="9" fill="#837c92">30</text>
+    <polygon points="478,194 513,183 548,189 583,168 618,175 653,155 688,162 723,143 723,206 478,206" fill="url(#chartFill)"/>
+    <polyline points="478,194 513,183 548,189 583,168 618,175 653,155 688,162 723,143" fill="none" stroke="#c2a4ff" stroke-width="1.5" stroke-linejoin="round"/>
+    <g fill="#c2a4ff">
+      <circle cx="478" cy="194" r="2"/><circle cx="513" cy="183" r="2"/><circle cx="548" cy="189" r="2"/>
+      <circle cx="583" cy="168" r="2"/><circle cx="618" cy="175" r="2"/><circle cx="653" cy="155" r="2"/>
+      <circle cx="688" cy="162" r="2"/>
+    </g>
+    <circle cx="723" cy="143" r="3" fill="#aa42ff" filter="url(#fGlowSoft)"/>
+    <text x="513" y="221" text-anchor="middle" font-size="9" fill="#837c92">Q3'24</text>
+    <text x="583" y="221" text-anchor="middle" font-size="9" fill="#837c92">Q1'25</text>
+    <text x="653" y="221" text-anchor="middle" font-size="9" fill="#837c92">Q3'25</text>
+    <text x="719" y="221" text-anchor="middle" font-size="9" fill="#837c92">Q1'26</text>
+
+    <!-- ===== program cards ===== -->
+    <!-- card 1: Tailoring & Textiles -->
+    <rect x="64" y="238" width="216" height="76" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <circle cx="84" cy="260" r="11" fill="rgba(127,64,255,0.18)" stroke="rgba(194,164,255,0.35)" stroke-width="1"/>
+    <g stroke="#c2a4ff" stroke-width="1.2" fill="none" stroke-linecap="round">
+      <line x1="79.5" y1="254.5" x2="88.5" y2="264.5"/>
+      <line x1="88.5" y1="254.5" x2="79.5" y2="264.5"/>
+      <circle cx="79" cy="265.5" r="1.6"/><circle cx="89" cy="265.5" r="1.6"/>
+    </g>
+    <text x="102" y="256" font-size="10.5" font-weight="700" fill="#eae5ec">Tailoring &amp; Textiles</text>
+    <text x="102" y="268" font-size="9" fill="#837c92">Stitching, pattern-making and</text>
+    <text x="102" y="279" font-size="9" fill="#837c92">boutique skills with seed support.</text>
+    <rect x="76" y="288" width="96" height="14" rx="7" fill="rgba(127,64,255,0.12)" stroke="rgba(194,164,255,0.30)" stroke-width="1"/>
+    <text x="124" y="298" text-anchor="middle" font-size="9" letter-spacing="0.4" fill="#c2a4ff">6-MO CERTIFICATE</text>
+    <text x="264" y="299" text-anchor="end" font-size="10" fill="#c2a4ff">→</text>
+
+    <!-- card 2: Computer Literacy -->
+    <rect x="292" y="238" width="216" height="76" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <circle cx="312" cy="260" r="11" fill="rgba(127,64,255,0.18)" stroke="rgba(194,164,255,0.35)" stroke-width="1"/>
+    <g stroke="#c2a4ff" stroke-width="1.2" fill="none" stroke-linecap="round">
+      <rect x="305.5" y="253.5" width="13" height="9" rx="1.5"/>
+      <line x1="312" y1="262.5" x2="312" y2="265.5"/>
+      <line x1="308" y1="266" x2="316" y2="266"/>
+    </g>
+    <text x="330" y="256" font-size="10.5" font-weight="700" fill="#eae5ec">Computer Literacy</text>
+    <text x="330" y="268" font-size="9" fill="#837c92">MS Office, UPI payments and</text>
+    <text x="330" y="279" font-size="9" fill="#837c92">internet safety for first-time users.</text>
+    <rect x="304" y="288" width="92" height="14" rx="7" fill="rgba(127,64,255,0.12)" stroke="rgba(194,164,255,0.30)" stroke-width="1"/>
+    <text x="350" y="298" text-anchor="middle" font-size="9" letter-spacing="0.4" fill="#c2a4ff">12-WEEK COURSE</text>
+    <text x="492" y="299" text-anchor="end" font-size="10" fill="#c2a4ff">→</text>
+
+    <!-- card 3: Job Placement Cell -->
+    <rect x="520" y="238" width="216" height="76" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <circle cx="540" cy="260" r="11" fill="rgba(127,64,255,0.18)" stroke="rgba(194,164,255,0.35)" stroke-width="1"/>
+    <g stroke="#c2a4ff" stroke-width="1.2" fill="none" stroke-linecap="round">
+      <rect x="533.5" y="256" width="13" height="8.5" rx="1.5"/>
+      <path d="M537.5,256 v-1.2 a1.5,1.5 0 0 1 1.5,-1.5 h2 a1.5,1.5 0 0 1 1.5,1.5 v1.2"/>
+      <line x1="533.5" y1="259.5" x2="546.5" y2="259.5"/>
+    </g>
+    <text x="558" y="256" font-size="10.5" font-weight="700" fill="#eae5ec">Job Placement Cell</text>
+    <text x="558" y="268" font-size="9" fill="#837c92">Mock interviews and tie-ups with</text>
+    <text x="558" y="279" font-size="9" fill="#837c92">40+ employers across 3 districts.</text>
+    <rect x="532" y="288" width="80" height="14" rx="7" fill="rgba(110,231,160,0.12)" stroke="rgba(110,231,160,0.35)" stroke-width="1"/>
+    <text x="572" y="298" text-anchor="middle" font-size="9" letter-spacing="0.4" fill="#6ee7a0">240+ PLACED</text>
+    <text x="720" y="299" text-anchor="end" font-size="10" fill="#c2a4ff">→</text>
+
+    <!-- ===== impact stats band ===== -->
+    <rect x="64" y="322" width="672" height="40" rx="10" fill="url(#bandGrad)" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <line x1="232" y1="330" x2="232" y2="354" stroke="rgba(194,164,255,0.14)" stroke-width="1"/>
+    <line x1="400" y1="330" x2="400" y2="354" stroke="rgba(194,164,255,0.14)" stroke-width="1"/>
+    <line x1="568" y1="330" x2="568" y2="354" stroke="rgba(194,164,255,0.14)" stroke-width="1"/>
+    <text x="148" y="344" text-anchor="middle" font-size="16" font-weight="700" fill="#c2a4ff">600+</text>
+    <text x="148" y="356" text-anchor="middle" font-size="9" letter-spacing="1" fill="#837c92">WOMEN TRAINED</text>
+    <text x="316" y="344" text-anchor="middle" font-size="16" font-weight="700" fill="#6ee7a0">240+</text>
+    <text x="316" y="356" text-anchor="middle" font-size="9" letter-spacing="1" fill="#837c92">PLACEMENTS</text>
+    <text x="484" y="344" text-anchor="middle" font-size="16" font-weight="700" fill="#fbbf24">35</text>
+    <text x="484" y="356" text-anchor="middle" font-size="9" letter-spacing="1" fill="#837c92">VILLAGES</text>
+    <text x="652" y="344" text-anchor="middle" font-size="16" font-weight="700" fill="#aa42ff">12</text>
+    <text x="652" y="356" text-anchor="middle" font-size="9" letter-spacing="1" fill="#837c92">CSR PARTNERS</text>
+
+    <!-- ===== testimonials ===== -->
+    <rect x="64" y="370" width="328" height="54" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <text x="76" y="396" font-size="22" font-weight="700" fill="#7f40ff" opacity="0.7">“</text>
+    <text x="96" y="387" font-size="9" fill="#eae5ec">The tailoring course paid for itself in three months —</text>
+    <text x="96" y="398" font-size="9" fill="#eae5ec">I now run a two-machine unit from home.</text>
+    <circle cx="101" cy="411.5" r="5" fill="url(#avGrad)"/>
+    <text x="111" y="414.5" font-size="9" font-weight="600" fill="#c2a4ff">Lakshmi D.</text>
+    <text x="162" y="414.5" font-size="9" fill="#837c92">· Batch 9, Kolar</text>
+
+    <rect x="408" y="370" width="328" height="54" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+    <text x="420" y="396" font-size="22" font-weight="700" fill="#7f40ff" opacity="0.7">“</text>
+    <text x="440" y="387" font-size="9" fill="#eae5ec">I cleared my first interview a week after mock</text>
+    <text x="440" y="398" font-size="9" fill="#eae5ec">rounds at the placement cell.</text>
+    <circle cx="445" cy="411.5" r="5" fill="url(#avGrad)"/>
+    <text x="455" y="414.5" font-size="9" font-weight="600" fill="#c2a4ff">Meena R.</text>
+    <text x="500" y="414.5" font-size="9" fill="#837c92">· Batch 12, Tumkur</text>
+
+    <!-- ===== footer ===== -->
+    <line x1="48" y1="432" x2="752" y2="432" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+    <circle cx="68" cy="444.5" r="3.5" fill="url(#ctaGrad)"/>
+    <text x="78" y="448" font-size="9" fill="#837c92">© 2026 Dhrishta Educational &amp; Research Foundation</text>
+    <text x="64" y="461" font-size="9" fill="#837c92">CIN U80902KA2021NPL · 80G &amp; 12A registered · reports@dhrishtaerf.org</text>
+    <rect x="520" y="439" width="216" height="17" rx="8.5" fill="rgba(127,64,255,0.12)" stroke="rgba(194,164,255,0.30)" stroke-width="1"/>
+    <circle cx="536" cy="447.5" r="2.5" fill="#6ee7a0"/>
+    <text x="545" y="451" font-size="9" letter-spacing="0.4" fill="#c2a4ff">SECTION-8 NON-PROFIT · CSR PARTNER</text>
+
+    <!-- outside bottom strip -->
+    <text x="48" y="489" font-size="9" font-family="Consolas, monospace" fill="#837c92"><tspan fill="#6ee7a0">$</tspan> npm run deploy — synced 42 files to dhrishtaerf.org · done in 3.2s <tspan fill="#6ee7a0">✓</tspan></text>
+    <text x="752" y="489" text-anchor="end" font-size="9" fill="#837c92">Kannada · English — mobile-first</text>
+  </g>
+</svg>

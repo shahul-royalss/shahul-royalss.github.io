@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaik Shahul - AI/ML Developer | Full-Stack Engineer</title>
+  <meta name="description" content="Shaik Shahul — AI/ML Developer & Full-Stack Engineer from Andhra Pradesh, India. Winner of APSSDC Hackathon-2026. Builder of PrajaSethu, RVS University's website, and a revenue-generating PG-management SaaS." />
+  <meta name="author" content="Shaik Shahul" />
+  <meta property="og:title" content="Shaik Shahul - AI/ML Developer | Full-Stack Engineer" />
+  <meta property="og:description" content="B.Tech CSE (AI & ML) student, freelance full-stack developer, state-level hackathon winner. 5 client projects shipped end-to-end." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b080c'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23c2a4ff' text-anchor='middle'%3ESS%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="loading">
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-wrap" id="loadingWrap">
+      <div class="loading-hover"></div>
+      <div class="loading-button">SHAIK SHAHUL <span class="loading-box"></span></div>
+    </div>
+  </div>
+
+  <main class="main-body main-active">
+    <div class="container-main">
+      <div class="cursor-main" id="cursorMain"></div>
+
+      <!-- ============ HEADER ============ -->
+      <div class="header" id="header">
+        <a href="#" class="navbar-title" data-cursor="disable">SS</a>
+        <a href="mailto:codewithshahul@gmail.com" class="navbar-connect" data-cursor="disable">codewithshahul@gmail.com</a>
+        <ul>
+          <li><a data-href="#about" href="#about"><div class="hover-link" data-cursor="disable"><div class="hover-in">ABOUT <div>ABOUT</div></div></div></a></li>
+          <li><a data-href="#work" href="#work"><div class="hover-link" data-cursor="disable"><div class="hover-in">WORK <div>WORK</div></div></div></a></li>
+          <li><a data-href="#contact" href="#contact"><div class="hover-link" data-cursor="disable"><div class="hover-in">CONTACT <div>CONTACT</div></div></div></a></li>
+        </ul>
+      </div>
+
+      <div class="landing-circle1"></div>
+      <div class="landing-circle2"></div>
+      <div class="nav-fade" id="navFade"></div>
+
+      <!-- ============ SOCIAL ICONS + RESUME ============ -->
+      <div class="icons-section" id="iconsSection">
+        <div class="social-icons" data-cursor="icons" id="social">
+          <span><a href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+          </a></span>
+          <span><a href="https://www.linkedin.com/in/shaik-shahul-b6158b3a1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+          </a></span>
+          <span><a href="mailto:codewithshahul@gmail.com" aria-label="Email">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"></path></svg>
+          </a></span>
+        </div>
+        <a class="resume-button" href="assets/resume/Shaik_Shahul_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="hover-link" data-cursor="disable"><div class="hover-in">RESUME <div>RESUME</div></div></div>
+          <span><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"></path><path d="M9 7l6 0"></path><path d="M9 11l6 0"></path><path d="M9 15l4 0"></path></svg></span>
+        </a>
+      </div>
+
+      <!-- ============ CHARACTER ============ -->
+      <div class="character-container">
+        <div class="character-model" id="characterModel">
+          <div class="character-rim" id="characterRim"></div>
+          <img class="character-img" id="characterImg" src="assets/hero-character.png" alt="Shaik Shahul — 3D character" fetchpriority="high" decoding="async" />
+        </div>
+      </div>
+
+      <div class="container-main">
+        <!-- ============ LANDING ============ -->
+        <div class="landing-section" id="landingDiv">
+          <div class="landing-container" id="landingContainer">
+            <div class="landing-intro">
+              <h2 class="anim-chars">Hello! I'm</h2>
+              <h1 class="anim-chars">SHAIK SHAHUL</h1>
+            </div>
+            <div class="mobile-photo">
+              <img src="assets/hero-character.png" alt="Shaik Shahul" loading="eager" fetchpriority="high" decoding="async" />
+            </div>
+            <div class="landing-info">
+              <h3 class="anim-chars">An</h3>
+              <h2 class="landing-info-h2 anim-chars-up">AI Engineer</h2>
+              <h2 class="landing-h2-wrap"><div class="landing-h2-info anim-chars">Full-Stack Developer</div></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ ABOUT ============ -->
+        <div class="about-section" id="about">
+          <div class="about-me">
+            <h3 class="title">About Me</h3>
+            <p class="para">I'm a B.Tech CSE (AI &amp; ML) student at RVS University and a freelance full-stack developer from Andhra Pradesh, India. I've shipped five client projects end-to-end — including RVS University's official website and a revenue-generating PG-management SaaS. Winner of the state-level APSSDC Hackathon-2026, I'm now building PrajaSethu — an AI-powered public grievance platform being prepared for a government pilot.</p>
+          </div>
+        </div>
+
+        <!-- ============ STATS (extra) ============ -->
+        <div class="stats-section" id="stats">
+          <div class="stat-box"><div class="stat-number"><span class="counter" data-target="5">0</span>+</div><div class="stat-label">Client Projects</div></div>
+          <div class="stat-box"><div class="stat-number"><span class="counter" data-target="4">0</span></div><div class="stat-label">Live Websites</div></div>
+          <div class="stat-box"><div class="stat-number"><span class="counter" data-target="2">0</span></div><div class="stat-label">Hackathon Podiums</div></div>
+          <div class="stat-box"><div class="stat-number"><span class="counter" data-target="20">0</span>+</div><div class="stat-label">Technologies</div></div>
+        </div>
+
+        <!-- ============ WHAT I DO ============ -->
+        <div class="whatIDO">
+          <div class="what-box">
+            <h2 class="title">W<span class="hat-h2">HAT</span>&nbsp;I <span class="do-h2">DO</span></h2>
+          </div>
+          <div class="what-box">
+            <div class="what-box-in" id="whatBoxIn" style="display:none;">
+              <div class="what-border2"><svg width="100%"><line x1="0" y1="0" x2="0" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="7,7"></line><line x1="100%" y1="0" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="7,7"></line></svg></div>
+
+              <div class="what-content what-noTouch">
+                <div class="what-border1"><svg height="100%"><line x1="0" y1="0" x2="100%" y2="0" stroke="white" stroke-width="2" stroke-dasharray="6,6"></line><line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6"></line></svg></div>
+                <div class="what-corner"></div>
+                <div class="what-content-in">
+                  <h3>AI / ML DEVELOPER</h3>
+                  <h4>Intelligent systems &amp; LLM-powered products</h4>
+                  <p>Building NLP and LLM applications, AI classification and recommendation systems, predictive models and voice-enabled assistants — the intelligence layer behind PrajaSethu.</p>
+                  <h5>Skillset &amp; tools</h5>
+                  <div class="what-content-flex">
+                    <div class="what-tags">Python</div><div class="what-tags">NLP</div><div class="what-tags">LLM Apps</div><div class="what-tags">AI Classification</div><div class="what-tags">Recommendations</div><div class="what-tags">Voice AI</div><div class="what-tags">Flask</div><div class="what-tags">Claude Code / MCP</div>
+                  </div>
+                  <div class="what-arrow"></div>
+                </div>
+              </div>
+
+              <div class="what-content what-noTouch">
+                <div class="what-border1"><svg height="100%"><line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6"></line></svg></div>
+                <div class="what-corner"></div>
+                <div class="what-content-in">
+                  <h3>FULL-STACK DEVELOPER</h3>
+                  <h4>Modern web apps, shipped end to end</h4>
+                  <p>Responsive, animated web applications — React and Next.js frontends, Node.js/Express APIs, PostgreSQL and MongoDB schemas, auth &amp; RBAC, and real-time features with Socket.io.</p>
+                  <h5>Skillset &amp; tools</h5>
+                  <div class="what-content-flex">
+                    <div class="what-tags">React</div><div class="what-tags">Next.js</div><div class="what-tags">TypeScript</div><div class="what-tags">Node.js</div><div class="what-tags">Express</div><div class="what-tags">PostgreSQL</div><div class="what-tags">MongoDB</div><div class="what-tags">Tailwind</div><div class="what-tags">Socket.io</div><div class="what-tags">REST APIs</div>
+                  </div>
+                  <div class="what-arrow"></div>
+                </div>
+              </div>
+
+              <div class="what-content what-noTouch">
+                <div class="what-border1"><svg height="100%"><line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6"></line></svg></div>
+                <div class="what-corner"></div>
+                <div class="what-content-in">
+                  <h3>SECURITY &amp; TOOLING</h3>
+                  <h4>Breaking things to build them safer</h4>
+                  <p>Web-application vulnerability assessment with my own scanner xeyresh, steganography research with phantomveil, networking and secure data-exchange design on Kali Linux.</p>
+                  <h5>Skillset &amp; tools</h5>
+                  <div class="what-content-flex">
+                    <div class="what-tags">Kali Linux</div><div class="what-tags">VAPT</div><div class="what-tags">Steganography</div><div class="what-tags">Networking</div><div class="what-tags">Secure Data Exchange</div><div class="what-tags">Git / GitHub</div>
+                  </div>
+                  <div class="what-arrow"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ CAREER ============ -->
+        <div class="career-section section-container">
+          <div class="career-container">
+            <h2>My career <span>&amp;</span><br /> experience</h2>
+            <div class="career-info">
+              <div class="career-timeline" id="careerTimeline"><div class="career-dot"></div></div>
+
+              <div class="career-info-box">
+                <div class="career-info-in">
+                  <div class="career-role"><h4>Building PrajaSethu</h4><h5>AI Civic-Tech Platform</h5></div>
+                  <h3>NOW</h3>
+                </div>
+                <p>Developing an AI-powered public grievance platform for Andhra Pradesh — voice complaints in Telugu, NLP/LLM auto-categorization, blockchain-backed records and an X-Road-style secure data-exchange layer — being prepared for a government pilot.</p>
+              </div>
+
+              <div class="career-info-box">
+                <div class="career-info-in">
+                  <div class="career-role"><h4>Hackathon Podiums &times;2</h4><h5>APSSDC &amp; Masranix</h5></div>
+                  <h3>2026</h3>
+                </div>
+                <p>Won the state-level APSSDC Hackathon-2026 with the social-complaint prototype that grew into PrajaSethu, then took 2nd place at the Masranix industry hackathon by shipping a working Campus Placement Portal in a 40-minute rapid-build round.</p>
+              </div>
+
+              <div class="career-info-box">
+                <div class="career-info-in">
+                  <div class="career-role"><h4>Freelance Full-Stack Developer</h4><h5>Self-Employed</h5></div>
+                  <h3>2025</h3>
+                </div>
+                <p>Shipped five client projects end-to-end for education and NGO clients — RVS University's official website, dhrishtaerf.org, two more institutional sites, and a revenue-generating PG-management SaaS. UI, backend, deployment, domains and DNS — all handled solo.</p>
+              </div>
+
+              <div class="career-info-box">
+                <div class="career-info-in">
+                  <div class="career-role"><h4>B.Tech CSE (AI &amp; ML)</h4><h5>RVS University</h5></div>
+                  <h3>2025</h3>
+                </div>
+                <p>Started my degree in Computer Science Engineering (AI &amp; ML) at RVS University, Chittoor — and won a state-level hackathon in my very first year while freelancing on the side.</p>
+              </div>
+
+              <div class="career-info-box">
+                <div class="career-info-in">
+                  <div class="career-role"><h4>First Builds &amp; Foundations</h4><h5>Self-Taught</h5></div>
+                  <h3>2024</h3>
+                </div>
+                <p>Taught myself Python and modern web development — HTML, CSS, JavaScript and React — building small tools, bots and experiments while completing Intermediate (MPC).</p>
+              </div>
+
+              <div class="career-info-box">
+                <div class="career-info-in">
+                  <div class="career-role"><h4>The Spark</h4><h5>Where It Began</h5></div>
+                  <h3>2023</h3>
+                </div>
+                <p>Finished SSC at Z P High School, Tirupati and chose MPC at Srivema Junior College — where curiosity about how software works turned into the decision to build things myself.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ WORK ============ -->
+        <div class="work-section" id="work">
+          <div class="work-container section-container">
+            <h2>My <span>Work</span></h2>
+            <div class="work-flex" id="workFlex">
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>01</h3><div><h4>PrajaSethu</h4><p>AI &middot; Civic-Tech</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>TypeScript, React, Node.js/Express, PostgreSQL, NLP &amp; LLM categorization, voice complaints, blockchain records</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/prajasethu.svg" alt="PrajaSethu" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>02</h3><div><h4>RVS University</h4><p>Live &middot; Client Work</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>Official university portal — admissions, exam results, student services. Built, deployed and DNS-configured end-to-end (rvsu.org)</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://rvsu.org" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/rvsu.svg" alt="RVS University website" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>03</h3><div><h4>PG Manager SaaS</h4><p>SaaS &middot; Revenue</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>Multi-role PG-management product generating real revenue — occupancy, rent tracking, dashboards, role-based access</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://www.linkedin.com/in/shaik-shahul-b6158b3a1" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/pg-saas.svg" alt="PG Manager SaaS" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>04</h3><div><h4>phantomveil</h4><p>Open Source &middot; Security</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>Python steganography toolkit (MIT) — embed and extract hidden, encrypted data inside text and images</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://github.com/shahul-royalss/phantomveil" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/phantomveil.svg" alt="phantomveil" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>05</h3><div><h4>xeyresh</h4><p>Open Source &middot; Security</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>Python web-application vulnerability scanner — crawls targets, detects common flaws and generates reports</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://github.com/shahul-royalss/xeyresh" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/xeyresh.svg" alt="xeyresh" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>06</h3><div><h4>WishTheDish FestTrack</h4><p>Real-Time &middot; Full-Stack</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>React, Node.js, PostgreSQL, Socket.io — live festival order queues, stall inventory and sales analytics</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/festtrack.svg" alt="WishTheDish FestTrack" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>07</h3><div><h4>Placement Portal</h4><p>Hackathon &middot; 2nd Place</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>Python, Flask, Bootstrap, SQLite — four-role campus placement platform built inside a 40-minute rapid round</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/placement-portal.svg" alt="Campus Placement Portal" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box">
+                <div class="work-info">
+                  <div class="work-title"><h3>08</h3><div><h4>Dhrishta ERF</h4><p>Live &middot; Client Work</p></div></div>
+                  <h4>Tools and features</h4>
+                  <p>Website for a Section-8 non-profit running CSR-funded education and job-placement programs for rural women (dhrishtaerf.org)</p>
+                </div>
+                <div class="work-image">
+                  <a class="work-image-in" href="https://dhrishtaerf.org" target="_blank" rel="noopener noreferrer" data-cursor="disable">
+                    <div class="work-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></div>
+                    <img src="assets/projects/dhrishta.svg" alt="Dhrishta ERF website" loading="eager" decoding="async" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-box work-box-cta">
+                <div class="see-all-works">
+                  <h3>Want to see more?</h3>
+                  <p>Also live in production: <a href="https://rvsdegreecollege.org" target="_blank" rel="noopener noreferrer">rvsdegreecollege.org</a> and <a href="https://svimlt.org" target="_blank" rel="noopener noreferrer">svimlt.org</a> — plus experiments on GitHub.</p>
+                  <a class="see-all-btn" data-cursor="disable" href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer">See All Works &rarr;</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ ACHIEVEMENTS (extra) ============ -->
+        <div class="achievements-section" id="achievements">
+          <h2>Achievements</h2>
+          <div class="achievements-flex">
+            <div class="achievement-card">
+              <div class="achievement-date">26 Mar 2026</div>
+              <div class="achievement-medal">&#127942;</div>
+              <h3>Winner — Hackathon-2026</h3>
+              <h4>Naipunyam / APSSDC &middot; State-Level</h4>
+              <p>1st place at the state-level hackathon organized by Sri Venkateswara College of Engineering &amp; Technology (now RVS University) with the AP State Skill Development Corporation, backed by the Chittoor district administration. Won in a team of 3 with the social-complaint platform prototype that grew into PrajaSethu — achieved in the first year of B.Tech.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-date">3 Aug 2026</div>
+              <div class="achievement-medal">&#129352;</div>
+              <h3>2nd Place — Masranix Hackathon</h3>
+              <h4>Masranix Private Technologies &middot; Industry Rapid-Build</h4>
+              <p>Delivered a working Campus Placement Portal within the event's 40-minute window on the organizer-specified stack (Python, Flask, Bootstrap, SQLite) — four-role access for Student, Staff, TPO and Admin, with admin-approved onboarding and a live placements dashboard.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ TECH STACK ============ -->
+        <div class="techstack-new">
+          <div class="techstack-bg">
+            <div class="tech-orb tech-orb1"></div>
+            <div class="tech-orb tech-orb2"></div>
+          </div>
+          <div class="techstack-video-container">
+            <video autoplay loop muted playsinline preload="metadata" class="techstack-video">
+              <source src="assets/video/video.webm" type="video/webm" />
+            </video>
+            <div class="techstack-overlay"></div>
+          </div>
+          <div class="techstack-content">
+            <h2>Tech Stack</h2>
+            <div class="techstack-pyramid">
+              <div class="techstack-row">
+                <a href="https://python.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Python" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" /><span>Python</span></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="techstack-item" title="JavaScript" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" /><span>JavaScript</span></a>
+                <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="TypeScript" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy" /><span>TypeScript</span></a>
+                <a href="https://www.java.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Java" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy" /><span>Java</span></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="techstack-item" title="HTML5" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy" /><span>HTML5</span></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="techstack-item" title="CSS3" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy" /><span>CSS3</span></a>
+                <a href="https://react.dev" target="_blank" rel="noopener noreferrer" class="techstack-item" title="React" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy" /><span>React</span></a>
+                <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Next.js" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" loading="lazy" /><span>Next.js</span></a>
+                <a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Bootstrap" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" loading="lazy" /><span>Bootstrap</span></a>
+              </div>
+              <div class="techstack-row">
+                <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Tailwind CSS" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" loading="lazy" /><span>Tailwind</span></a>
+                <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Node.js" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy" /><span>Node.js</span></a>
+                <a href="https://expressjs.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Express" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" loading="lazy" /><span>Express</span></a>
+                <a href="https://flask.palletsprojects.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Flask" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" loading="lazy" /><span>Flask</span></a>
+                <a href="https://socket.io" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Socket.io" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.io" loading="lazy" /><span>Socket.io</span></a>
+                <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="npm" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" loading="lazy" /><span>npm</span></a>
+                <a href="https://www.postman.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Postman" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" loading="lazy" /><span>Postman</span></a>
+              </div>
+              <div class="techstack-row">
+                <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="PostgreSQL" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy" /><span>PostgreSQL</span></a>
+                <a href="https://www.mysql.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="MySQL" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy" /><span>MySQL</span></a>
+                <a href="https://www.sqlite.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="SQLite" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" loading="lazy" /><span>SQLite</span></a>
+                <a href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="MongoDB" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy" /><span>MongoDB</span></a>
+                <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Git" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy" /><span>Git</span></a>
+              </div>
+              <div class="techstack-row">
+                <a href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer" class="techstack-item" title="GitHub" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" loading="lazy" /><span>GitHub</span></a>
+                <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="VS Code" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy" /><span>VS Code</span></a>
+                <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Vercel" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" loading="lazy" /><span>Vercel</span></a>
+              </div>
+              <div class="techstack-row">
+                <a href="https://www.linux.org" target="_blank" rel="noopener noreferrer" class="techstack-item" title="Linux" data-cursor="disable"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" loading="lazy" /><span>Linux</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ CTA ============ -->
+        <div class="cta-section">
+          <div class="cta-buttons">
+            <a class="cta-btn cta-btn-play" data-cursor="disable" href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer">Explore My GitHub &rarr;</a>
+            <a href="https://www.linkedin.com/in/shaik-shahul-b6158b3a1" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn-hire" data-cursor="disable">Hire Me &rarr;</a>
+          </div>
+        </div>
+
+        <!-- ============ CONTACT ============ -->
+        <div class="contact-section section-container" id="contact">
+          <div class="contact-container">
+            <h3>Shaik Shahul</h3>
+            <div class="contact-flex">
+              <div class="contact-box">
+                <h4>Email</h4>
+                <p><a href="mailto:codewithshahul@gmail.com" data-cursor="disable">codewithshahul@gmail.com</a></p>
+                <h4>Phone</h4>
+                <p><a href="tel:+917569716576" data-cursor="disable">+91 75697 16576</a></p>
+                <h4>Location</h4>
+                <p><span>Chittoor, Andhra Pradesh, India</span></p>
+              </div>
+              <div class="contact-box">
+                <h4>Social</h4>
+                <a href="https://github.com/shahul-royalss" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">Github <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
+                <a href="https://www.linkedin.com/in/shaik-shahul-b6158b3a1" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">Linkedin <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
+                <a href="assets/resume/Shaik_Shahul_Resume.pdf" target="_blank" rel="noopener noreferrer" data-cursor="disable" class="contact-social">R&eacute;sum&eacute; <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg></a>
+              </div>
+              <div class="contact-box">
+                <h2>Designed and Developed <br /> by <span>Shaik Shahul</span></h2>
+                <h5><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11.88 9.14c1.28.06 1.61 1.15 1.63 1.66h1.79c-.08-1.98-1.49-3.19-3.45-3.19C9.64 7.61 8 9 8 12.14c0 1.94.93 4.24 3.84 4.24 2.22 0 3.41-1.65 3.44-2.95h-1.79c-.03.59-.45 1.38-1.63 1.44-1.31-.04-1.86-1.06-1.86-2.73 0-2.89 1.28-2.98 1.88-3zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg> 2026</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

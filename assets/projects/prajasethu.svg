@@ -1,0 +1,337 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#c2a4ff" opacity="0.06"/>
+    </pattern>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aa42ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#aa42ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f40ff"/>
+      <stop offset="100%" stop-color="#c2a4ff"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2a4ff"/>
+      <stop offset="100%" stop-color="#aa42ff"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f40ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7f40ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f40ff"/>
+      <stop offset="100%" stop-color="#aa42ff"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="win"><rect x="10" y="8" width="780" height="484" rx="14"/></clipPath>
+  </defs>
+
+  <!-- page background -->
+  <rect x="0" y="0" width="800" height="500" fill="#0d0a12"/>
+
+  <!-- window shell -->
+  <rect x="10" y="8" width="780" height="484" rx="14" fill="#16121e"/>
+  <g clip-path="url(#win)">
+    <rect x="10" y="8" width="780" height="484" fill="url(#dots)"/>
+    <circle cx="600" cy="100" r="290" fill="url(#g1)"/>
+    <circle cx="150" cy="450" r="240" fill="url(#g2)"/>
+  </g>
+
+  <!-- header chrome -->
+  <circle cx="30" cy="27" r="4.5" fill="#f87171"/>
+  <circle cx="46" cy="27" r="4.5" fill="#fbbf24"/>
+  <circle cx="62" cy="27" r="4.5" fill="#6ee7a0"/>
+  <rect x="80" y="18" width="92" height="18" rx="9" fill="rgba(127,64,255,0.22)" stroke="rgba(194,164,255,0.5)" stroke-width="1"/>
+  <text x="126" y="30.5" text-anchor="middle" font-size="9" font-weight="700" letter-spacing="1.5" fill="#c2a4ff">PRAJASETHU</text>
+  <text x="182" y="31" font-size="11" font-weight="600" fill="#eae5ec">PrajaSethu - Grievance Command Center</text>
+  <rect x="460" y="18" width="156" height="18" rx="9" fill="#0d0a12" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <circle cx="473" cy="26" r="3" fill="none" stroke="#837c92" stroke-width="1.1"/>
+  <line x1="475.5" y1="28.5" x2="478" y2="31" stroke="#837c92" stroke-width="1.1"/>
+  <text x="486" y="30" font-size="9" fill="#837c92">Search grievance ID…</text>
+  <rect x="630" y="18" width="50" height="18" rx="9" fill="rgba(110,231,160,0.1)" stroke="rgba(110,231,160,0.4)" stroke-width="1"/>
+  <circle cx="641" cy="27" r="3" fill="#6ee7a0" filter="url(#glow)"/>
+  <text x="650" y="30.5" font-size="9" font-weight="600" fill="#6ee7a0">LIVE</text>
+  <text x="692" y="30.5" font-size="9" fill="#837c92">14:32 IST</text>
+  <circle cx="762" cy="27" r="9" fill="url(#avGrad)" stroke="rgba(194,164,255,0.4)" stroke-width="1"/>
+  <text x="762" y="30.5" text-anchor="middle" font-size="9" font-weight="600" fill="#eae5ec">AP</text>
+  <line x1="10" y1="46" x2="790" y2="46" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+
+  <!-- ================= SIDEBAR ================= -->
+  <rect x="18" y="54" width="150" height="370" rx="12" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="30" y="74" font-size="9" letter-spacing="1.2" fill="#837c92">DEPARTMENTS</text>
+  <!-- Water (selected) -->
+  <rect x="24" y="84" width="138" height="24" rx="8" fill="rgba(127,64,255,0.2)" stroke="rgba(194,164,255,0.35)" stroke-width="1"/>
+  <circle cx="34" cy="96" r="3" fill="#c2a4ff"/>
+  <text x="42" y="99.5" font-size="10" font-weight="600" fill="#eae5ec">Water</text>
+  <rect x="124" y="88.5" width="34" height="15" rx="7.5" fill="rgba(194,164,255,0.14)"/>
+  <text x="141" y="99.5" text-anchor="middle" font-size="9" fill="#c2a4ff">342</text>
+  <!-- Roads -->
+  <circle cx="34" cy="124" r="3" fill="#fbbf24"/>
+  <text x="42" y="127.5" font-size="10" fill="#837c92">Roads</text>
+  <rect x="124" y="116.5" width="34" height="15" rx="7.5" fill="rgba(194,164,255,0.08)"/>
+  <text x="141" y="127.5" text-anchor="middle" font-size="9" fill="#837c92">218</text>
+  <!-- Power -->
+  <circle cx="34" cy="152" r="3" fill="#aa42ff"/>
+  <text x="42" y="155.5" font-size="10" fill="#837c92">Power</text>
+  <rect x="124" y="144.5" width="34" height="15" rx="7.5" fill="rgba(194,164,255,0.08)"/>
+  <text x="141" y="155.5" text-anchor="middle" font-size="9" fill="#837c92">154</text>
+  <!-- Health -->
+  <circle cx="34" cy="180" r="3" fill="#f87171"/>
+  <text x="42" y="183.5" font-size="10" fill="#837c92">Health</text>
+  <rect x="124" y="172.5" width="34" height="15" rx="7.5" fill="rgba(194,164,255,0.08)"/>
+  <text x="141" y="183.5" text-anchor="middle" font-size="9" fill="#837c92">96</text>
+  <!-- Sanitation -->
+  <circle cx="34" cy="208" r="3" fill="#6ee7a0"/>
+  <text x="42" y="211.5" font-size="10" fill="#837c92">Sanitation</text>
+  <rect x="124" y="200.5" width="34" height="15" rx="7.5" fill="rgba(194,164,255,0.08)"/>
+  <text x="141" y="211.5" text-anchor="middle" font-size="9" fill="#837c92">187</text>
+
+  <line x1="28" y1="230" x2="158" y2="230" stroke="rgba(194,164,255,0.1)" stroke-width="1"/>
+  <text x="30" y="248" font-size="9" letter-spacing="1.2" fill="#837c92">TODAY</text>
+  <text x="30" y="270" font-size="17" font-weight="700" fill="#eae5ec">1,284</text>
+  <text x="30" y="283" font-size="9" fill="#837c92">complaints filed today</text>
+
+  <text x="30" y="300" font-size="9" fill="#eae5ec">Resolved</text>
+  <text x="158" y="300" text-anchor="end" font-size="9" fill="#6ee7a0">72%</text>
+  <rect x="30" y="304" width="128" height="4" rx="2" fill="rgba(194,164,255,0.1)"/>
+  <rect x="30" y="304" width="92" height="4" rx="2" fill="#6ee7a0"/>
+  <text x="30" y="320" font-size="9" fill="#eae5ec">Pending</text>
+  <text x="158" y="320" text-anchor="end" font-size="9" fill="#fbbf24">21%</text>
+  <rect x="30" y="324" width="128" height="4" rx="2" fill="rgba(194,164,255,0.1)"/>
+  <rect x="30" y="324" width="27" height="4" rx="2" fill="#fbbf24"/>
+  <text x="30" y="340" font-size="9" fill="#eae5ec">Escalated</text>
+  <text x="158" y="340" text-anchor="end" font-size="9" fill="#f87171">7%</text>
+  <rect x="30" y="344" width="128" height="4" rx="2" fill="rgba(194,164,255,0.1)"/>
+  <rect x="30" y="344" width="9" height="4" rx="2" fill="#f87171"/>
+
+  <line x1="28" y1="356" x2="158" y2="356" stroke="rgba(194,164,255,0.1)" stroke-width="1"/>
+  <text x="30" y="374" font-size="9" fill="#eae5ec">AI auto-route</text>
+  <rect x="118" y="364" width="26" height="13" rx="6.5" fill="rgba(110,231,160,0.22)" stroke="rgba(110,231,160,0.5)" stroke-width="1"/>
+  <circle cx="137" cy="370.5" r="4.5" fill="#6ee7a0"/>
+  <circle cx="33" cy="390" r="2.5" fill="#6ee7a0"/>
+  <text x="40" y="393" font-size="9" fill="#837c92">12 dept nodes online</text>
+  <text x="30" y="411" font-size="9" fill="#837c92" opacity="0.75">core v2.4.1 - APSSDC cloud</text>
+
+  <!-- ================= MAIN FEED ================= -->
+  <text x="176" y="72" font-size="12" font-weight="600" fill="#eae5ec">Live Complaints Feed</text>
+  <rect x="400" y="60" width="44" height="16" rx="8" fill="rgba(194,164,255,0.15)"/>
+  <text x="422" y="71.5" text-anchor="middle" font-size="9" fill="#c2a4ff">ALL</text>
+  <rect x="450" y="60" width="62" height="16" rx="8" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.35)" stroke-width="1"/>
+  <text x="481" y="71.5" text-anchor="middle" font-size="9" fill="#f87171">HIGH - 87</text>
+
+  <!-- card 1 -->
+  <rect x="176" y="82" width="344" height="62" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="182" y="92" width="3" height="42" rx="1.5" fill="#f87171"/>
+  <text x="194" y="102" font-size="11" font-weight="600" fill="#eae5ec">Water leakage - Ward 12, Vijayawada</text>
+  <text x="508" y="102" text-anchor="end" font-size="9" fill="#837c92">#GRV-88214 - 2m ago</text>
+  <rect x="194" y="114" width="96" height="16" rx="8" fill="rgba(170,66,255,0.14)" stroke="rgba(170,66,255,0.4)" stroke-width="1"/>
+  <text x="242" y="125.5" text-anchor="middle" font-size="9" fill="#c2a4ff">AI - Water Supply</text>
+  <rect x="298" y="114" width="42" height="16" rx="8" fill="rgba(248,113,113,0.13)" stroke="rgba(248,113,113,0.4)" stroke-width="1"/>
+  <text x="319" y="125.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f87171">HIGH</text>
+  <circle cx="368" cy="122" r="2.5" fill="#6ee7a0"/>
+  <text x="376" y="125.5" font-size="9" fill="#837c92">Assigned - Field Unit 07</text>
+
+  <!-- card 2 -->
+  <rect x="176" y="152" width="344" height="62" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="182" y="162" width="3" height="42" rx="1.5" fill="#fbbf24"/>
+  <text x="194" y="172" font-size="11" font-weight="600" fill="#eae5ec">Streetlight outage - NTR Colony, Guntur</text>
+  <text x="508" y="172" text-anchor="end" font-size="9" fill="#837c92">#GRV-88209 - 9m ago</text>
+  <rect x="194" y="184" width="62" height="16" rx="8" fill="rgba(170,66,255,0.14)" stroke="rgba(170,66,255,0.4)" stroke-width="1"/>
+  <text x="225" y="195.5" text-anchor="middle" font-size="9" fill="#c2a4ff">AI - Power</text>
+  <rect x="264" y="184" width="56" height="16" rx="8" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+  <text x="292" y="195.5" text-anchor="middle" font-size="9" font-weight="700" fill="#fbbf24">MEDIUM</text>
+  <circle cx="368" cy="192" r="2.5" fill="#fbbf24"/>
+  <text x="376" y="195.5" font-size="9" fill="#837c92">In review - AE Power</text>
+
+  <!-- card 3 -->
+  <rect x="176" y="222" width="344" height="62" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="182" y="232" width="3" height="42" rx="1.5" fill="#f87171"/>
+  <text x="194" y="242" font-size="11" font-weight="600" fill="#eae5ec">Garbage overflow - Rythu Bazaar Road</text>
+  <text x="508" y="242" text-anchor="end" font-size="9" fill="#837c92">#GRV-88197 - 14m ago</text>
+  <rect x="194" y="254" width="84" height="16" rx="8" fill="rgba(170,66,255,0.14)" stroke="rgba(170,66,255,0.4)" stroke-width="1"/>
+  <text x="236" y="265.5" text-anchor="middle" font-size="9" fill="#c2a4ff">AI - Sanitation</text>
+  <rect x="286" y="254" width="42" height="16" rx="8" fill="rgba(248,113,113,0.13)" stroke="rgba(248,113,113,0.4)" stroke-width="1"/>
+  <text x="307" y="265.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f87171">HIGH</text>
+  <circle cx="368" cy="262" r="2.5" fill="#f87171"/>
+  <text x="376" y="265.5" font-size="9" fill="#837c92">Escalated - Level 2</text>
+
+  <!-- card 4 -->
+  <rect x="176" y="292" width="344" height="62" rx="10" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <rect x="182" y="302" width="3" height="42" rx="1.5" fill="#c2a4ff"/>
+  <text x="194" y="312" font-size="11" font-weight="600" fill="#eae5ec">Pothole cluster - NH-16 service road</text>
+  <text x="508" y="312" text-anchor="end" font-size="9" fill="#837c92">#GRV-88190 - 21m ago</text>
+  <rect x="194" y="324" width="62" height="16" rx="8" fill="rgba(170,66,255,0.14)" stroke="rgba(170,66,255,0.4)" stroke-width="1"/>
+  <text x="225" y="335.5" text-anchor="middle" font-size="9" fill="#c2a4ff">AI - Roads</text>
+  <rect x="264" y="324" width="56" height="16" rx="8" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+  <text x="292" y="335.5" text-anchor="middle" font-size="9" font-weight="700" fill="#fbbf24">MEDIUM</text>
+  <circle cx="368" cy="332" r="2.5" fill="#c2a4ff"/>
+  <text x="376" y="335.5" font-size="9" fill="#837c92">Acknowledged - R&amp;B Dept</text>
+
+  <!-- voice input bar -->
+  <rect x="176" y="362" width="344" height="62" rx="10" fill="#1a1524" stroke="rgba(170,66,255,0.5)" stroke-width="1"/>
+  <circle cx="200" cy="394" r="13" fill="rgba(170,66,255,0.22)" stroke="#aa42ff" stroke-width="1.2" filter="url(#glow)"/>
+  <rect x="196.5" y="386" width="7" height="11" rx="3.5" fill="#eae5ec"/>
+  <path d="M193,392 a7,7 0 0 0 14,0" fill="none" stroke="#eae5ec" stroke-width="1.2"/>
+  <line x1="200" y1="399" x2="200" y2="402.5" stroke="#eae5ec" stroke-width="1.2"/>
+  <text x="222" y="380" font-size="10" font-weight="600" fill="#eae5ec">Voice complaint (Telugu) - transcribing...</text>
+  <g fill="#c2a4ff">
+    <rect x="222" y="397.5" width="3" height="5" rx="1.5"/>
+    <rect x="228" y="395.5" width="3" height="9" rx="1.5"/>
+    <rect x="234" y="393" width="3" height="14" rx="1.5"/>
+    <rect x="240" y="396" width="3" height="8" rx="1.5"/>
+    <rect x="246" y="392" width="3" height="16" rx="1.5"/>
+    <rect x="252" y="390" width="3" height="20" rx="1.5"/>
+    <rect x="258" y="394" width="3" height="12" rx="1.5"/>
+    <rect x="264" y="396.5" width="3" height="7" rx="1.5"/>
+    <rect x="270" y="395" width="3" height="10" rx="1.5"/>
+    <rect x="276" y="392.5" width="3" height="15" rx="1.5"/>
+    <rect x="282" y="391" width="3" height="18" rx="1.5"/>
+    <rect x="288" y="394.5" width="3" height="11" rx="1.5"/>
+    <rect x="294" y="396" width="3" height="8" rx="1.5"/>
+    <rect x="300" y="397.5" width="3" height="5" rx="1.5"/>
+    <rect x="306" y="395" width="3" height="10" rx="1.5"/>
+    <rect x="312" y="393" width="3" height="14" rx="1.5"/>
+    <rect x="318" y="391.5" width="3" height="17" rx="1.5"/>
+    <rect x="324" y="394" width="3" height="12" rx="1.5"/>
+    <rect x="330" y="395.5" width="3" height="9" rx="1.5"/>
+    <rect x="336" y="397" width="3" height="6" rx="1.5"/>
+    <rect x="342" y="393.5" width="3" height="13" rx="1.5"/>
+    <rect x="348" y="391.5" width="3" height="17" rx="1.5"/>
+  </g>
+  <g fill="#837c92" opacity="0.5">
+    <rect x="354" y="395.5" width="3" height="9" rx="1.5"/>
+    <rect x="360" y="397" width="3" height="6" rx="1.5"/>
+    <rect x="366" y="398" width="3" height="4" rx="1.5"/>
+    <rect x="372" y="396.5" width="3" height="7" rx="1.5"/>
+    <rect x="378" y="397.5" width="3" height="5" rx="1.5"/>
+    <rect x="384" y="396" width="3" height="8" rx="1.5"/>
+    <rect x="390" y="397" width="3" height="6" rx="1.5"/>
+    <rect x="396" y="398" width="3" height="4" rx="1.5"/>
+    <rect x="402" y="397.5" width="3" height="5" rx="1.5"/>
+    <rect x="408" y="396.5" width="3" height="7" rx="1.5"/>
+    <rect x="414" y="398" width="3" height="4" rx="1.5"/>
+    <rect x="420" y="398.5" width="3" height="3" rx="1.5"/>
+  </g>
+  <circle cx="438" cy="377" r="3" fill="#f87171" filter="url(#glow)"/>
+  <text x="445" y="380" font-size="9" font-weight="600" fill="#f87171">REC</text>
+  <text x="434" y="399" font-size="11" font-weight="600" fill="#eae5ec">00:14</text>
+  <text x="434" y="414" font-size="9" fill="#c2a4ff">te-IN - 94%</text>
+
+  <!-- ================= RIGHT COLUMN ================= -->
+  <!-- AI classification -->
+  <rect x="528" y="54" width="254" height="150" rx="12" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <path d="M543,60 l1.8,4.2 4.2,1.8 -4.2,1.8 -1.8,4.2 -1.8,-4.2 -4.2,-1.8 4.2,-1.8 z" fill="#c2a4ff"/>
+  <text x="554" y="71.5" font-size="9" letter-spacing="1.2" fill="#837c92">AI CLASSIFICATION</text>
+  <rect x="694" y="59" width="78" height="15" rx="7.5" fill="rgba(194,164,255,0.1)"/>
+  <text x="733" y="70" text-anchor="middle" font-size="9" fill="#c2a4ff">IndicBERT-v3</text>
+  <rect x="538" y="80" width="234" height="22" rx="6" fill="#0d0a12" stroke="rgba(194,164,255,0.12)" stroke-width="1"/>
+  <text x="546" y="94.5" font-size="9" fill="#6ee7a0">&gt; NLP -&gt; Category: Water Supply - 96%</text>
+  <rect x="740" y="86.5" width="4" height="9" fill="#6ee7a0" opacity="0.8"/>
+  <text x="540" y="122" font-size="9" fill="#eae5ec">Water Supply</text>
+  <rect x="618" y="115.5" width="112" height="5" rx="2.5" fill="rgba(194,164,255,0.12)"/>
+  <rect x="618" y="115.5" width="108" height="5" rx="2.5" fill="url(#barGrad)"/>
+  <text x="772" y="122" text-anchor="end" font-size="9" fill="#c2a4ff">96%</text>
+  <text x="540" y="140" font-size="9" fill="#837c92">Sanitation</text>
+  <rect x="618" y="133.5" width="112" height="5" rx="2.5" fill="rgba(194,164,255,0.12)"/>
+  <rect x="618" y="133.5" width="5" height="5" rx="2.5" fill="#837c92"/>
+  <text x="772" y="140" text-anchor="end" font-size="9" fill="#837c92">2%</text>
+  <text x="540" y="158" font-size="9" fill="#837c92">Roads</text>
+  <rect x="618" y="151.5" width="112" height="5" rx="2.5" fill="rgba(194,164,255,0.12)"/>
+  <rect x="618" y="151.5" width="3" height="5" rx="2.5" fill="#837c92"/>
+  <text x="772" y="158" text-anchor="end" font-size="9" fill="#837c92">1%</text>
+  <rect x="538" y="170" width="52" height="15" rx="7.5" fill="rgba(127,64,255,0.16)" stroke="rgba(127,64,255,0.45)" stroke-width="1"/>
+  <text x="564" y="180.5" text-anchor="middle" font-size="9" fill="#c2a4ff">ward 12</text>
+  <rect x="596" y="170" width="56" height="15" rx="7.5" fill="rgba(127,64,255,0.16)" stroke="rgba(127,64,255,0.45)" stroke-width="1"/>
+  <text x="624" y="180.5" text-anchor="middle" font-size="9" fill="#c2a4ff">pipeline</text>
+  <rect x="658" y="170" width="52" height="15" rx="7.5" fill="rgba(127,64,255,0.16)" stroke="rgba(127,64,255,0.45)" stroke-width="1"/>
+  <text x="684" y="180.5" text-anchor="middle" font-size="9" fill="#c2a4ff">leakage</text>
+  <rect x="716" y="170" width="50" height="15" rx="7.5" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.4)" stroke-width="1"/>
+  <text x="741" y="180.5" text-anchor="middle" font-size="9" fill="#f87171">urgent</text>
+
+  <!-- resolution time chart -->
+  <rect x="528" y="212" width="254" height="132" rx="12" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="540" y="230" font-size="9" letter-spacing="1.2" fill="#837c92">RESOLUTION TIME (AVG HRS)</text>
+  <text x="726" y="231" text-anchor="end" font-size="12" font-weight="700" fill="#eae5ec">18.4h</text>
+  <text x="772" y="231" text-anchor="end" font-size="9" font-weight="600" fill="#6ee7a0">&#8595; 22%</text>
+  <line x1="566" y1="252" x2="766" y2="252" stroke="rgba(194,164,255,0.08)" stroke-width="1"/>
+  <line x1="566" y1="272" x2="766" y2="272" stroke="rgba(194,164,255,0.08)" stroke-width="1"/>
+  <line x1="566" y1="292" x2="766" y2="292" stroke="rgba(194,164,255,0.08)" stroke-width="1"/>
+  <line x1="566" y1="312" x2="766" y2="312" stroke="rgba(194,164,255,0.08)" stroke-width="1"/>
+  <line x1="566" y1="326" x2="766" y2="326" stroke="rgba(194,164,255,0.16)" stroke-width="1"/>
+  <text x="558" y="255" text-anchor="end" font-size="9" fill="#837c92">48</text>
+  <text x="558" y="275" text-anchor="end" font-size="9" fill="#837c92">36</text>
+  <text x="558" y="295" text-anchor="end" font-size="9" fill="#837c92">24</text>
+  <text x="558" y="315" text-anchor="end" font-size="9" fill="#837c92">12</text>
+  <path d="M566,262 L582.5,270 L599,252 L615.5,266 L632,258 L648.5,284 L665,264 L681.5,278 L698,270 L714.5,300 L731,286 L747.5,300 L764,302 L764,326 L566,326 Z" fill="url(#areaGrad)"/>
+  <polyline points="566,262 582.5,270 599,252 615.5,266 632,258 648.5,284 665,264 681.5,278 698,270 714.5,300 731,286 747.5,300 764,302" fill="none" stroke="url(#lineGrad)" stroke-width="1.5" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cx="599" cy="252" r="1.8" fill="#c2a4ff" opacity="0.85"/>
+  <circle cx="665" cy="264" r="1.8" fill="#c2a4ff" opacity="0.85"/>
+  <circle cx="714.5" cy="300" r="1.8" fill="#c2a4ff" opacity="0.85"/>
+  <circle cx="764" cy="302" r="5" fill="none" stroke="#c2a4ff" stroke-width="1" opacity="0.5"/>
+  <circle cx="764" cy="302" r="2.5" fill="#c2a4ff" filter="url(#glow)"/>
+  <text x="566" y="340" text-anchor="middle" font-size="9" fill="#837c92">Mon</text>
+  <text x="632" y="340" text-anchor="middle" font-size="9" fill="#837c92">Wed</text>
+  <text x="698" y="340" text-anchor="middle" font-size="9" fill="#837c92">Fri</text>
+  <text x="764" y="340" text-anchor="middle" font-size="9" fill="#837c92">Sun</text>
+
+  <!-- stat tiles -->
+  <rect x="528" y="352" width="122" height="72" rx="12" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="540" y="370" font-size="9" letter-spacing="1" fill="#837c92">SLA MET</text>
+  <rect x="606" y="370" width="5" height="8" fill="#6ee7a0" opacity="0.45"/>
+  <rect x="614" y="368" width="5" height="10" fill="#6ee7a0" opacity="0.6"/>
+  <rect x="622" y="371" width="5" height="7" fill="#6ee7a0" opacity="0.5"/>
+  <rect x="630" y="366" width="5" height="12" fill="#6ee7a0" opacity="0.8"/>
+  <rect x="638" y="364" width="5" height="14" fill="#6ee7a0"/>
+  <text x="540" y="396" font-size="16" font-weight="700" fill="#6ee7a0">91.2%</text>
+  <text x="540" y="412" font-size="9" fill="#837c92">+3.1% vs last week</text>
+
+  <rect x="660" y="352" width="122" height="72" rx="12" fill="#1a1524" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="672" y="370" font-size="9" letter-spacing="1" fill="#837c92">ESCALATIONS</text>
+  <path d="M760,364 l7,12 h-14 z" fill="none" stroke="#fbbf24" stroke-width="1.2" stroke-linejoin="round"/>
+  <line x1="760" y1="369" x2="760" y2="372" stroke="#fbbf24" stroke-width="1.2"/>
+  <circle cx="760" cy="374.2" r="0.7" fill="#fbbf24"/>
+  <text x="672" y="396" font-size="16" font-weight="700" fill="#fbbf24">37</text>
+  <text x="672" y="412" font-size="9" fill="#837c92">L2: 09 - L3: 02</text>
+
+  <!-- ================= BLOCKCHAIN STRIP ================= -->
+  <rect x="18" y="432" width="764" height="52" rx="12" fill="#16121e" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+  <text x="32" y="453" font-size="9" font-weight="700" letter-spacing="1.2" fill="#c2a4ff">BLOCKCHAIN</text>
+  <text x="32" y="466" font-size="9" fill="#837c92">immutable audit trail</text>
+
+  <rect x="140" y="442" width="140" height="32" rx="8" fill="#1a1524" stroke="rgba(194,164,255,0.22)" stroke-width="1"/>
+  <text x="150" y="455" font-size="9" fill="#c2a4ff">0x3fa9&#8230;c21e</text>
+  <text x="150" y="467" font-size="9" fill="#837c92">GRV-88214 - filed</text>
+  <text x="270" y="456" text-anchor="end" font-size="10" fill="#6ee7a0">&#10003;</text>
+  <line x1="280" y1="458" x2="300" y2="458" stroke="rgba(194,164,255,0.4)" stroke-width="1"/>
+  <circle cx="290" cy="458" r="2" fill="#7f40ff"/>
+
+  <rect x="300" y="442" width="140" height="32" rx="8" fill="#1a1524" stroke="rgba(194,164,255,0.22)" stroke-width="1"/>
+  <text x="310" y="455" font-size="9" fill="#c2a4ff">0x81d2&#8230;77af</text>
+  <text x="310" y="467" font-size="9" fill="#837c92">GRV-88214 - assigned</text>
+  <text x="430" y="456" text-anchor="end" font-size="10" fill="#6ee7a0">&#10003;</text>
+  <line x1="440" y1="458" x2="460" y2="458" stroke="rgba(194,164,255,0.4)" stroke-width="1"/>
+  <circle cx="450" cy="458" r="2" fill="#7f40ff"/>
+
+  <rect x="460" y="442" width="140" height="32" rx="8" fill="#1a1524" stroke="rgba(194,164,255,0.22)" stroke-width="1"/>
+  <text x="470" y="455" font-size="9" fill="#c2a4ff">0xc4b7&#8230;09e3</text>
+  <text x="470" y="467" font-size="9" fill="#837c92">GRV-88197 - resolved</text>
+  <text x="590" y="456" text-anchor="end" font-size="10" fill="#6ee7a0">&#10003;</text>
+  <line x1="600" y1="458" x2="620" y2="458" stroke="rgba(194,164,255,0.4)" stroke-width="1"/>
+  <circle cx="610" cy="458" r="2" fill="#7f40ff"/>
+
+  <rect x="620" y="442" width="140" height="32" rx="8" fill="#1a1524" stroke="rgba(251,191,36,0.5)" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="630" y="455" font-size="9" fill="#c2a4ff">0x5e2f&#8230;b8d1</text>
+  <text x="630" y="467" font-size="9" fill="#837c92">anchoring batch 512&#8230;</text>
+  <circle cx="748" cy="452" r="3" fill="#fbbf24" filter="url(#glow)"/>
+
+  <!-- window border on top -->
+  <rect x="10" y="8" width="780" height="484" rx="14" fill="none" stroke="rgba(194,164,255,0.18)" stroke-width="1"/>
+</svg>
