@@ -75,79 +75,80 @@ main { opacity: 1; transition: 0.3s; }
 @media only screen and (max-width: 1400px) { .section-container { width: 900px; } }
 @media only screen and (max-width: 900px) { .section-container { width: 500px; max-width: var(--cWidth); } }
 
-/* ============ LOADING SCREEN ============ */
+/* ============ LOADING SCREEN (percentage + Netflix-style zoom) ============ */
 .loading-screen {
   position: fixed;
   inset: 0;
   width: 100vw;
   height: var(--vh);
-  background-color: #eae5ec;
+  background-color: #050308;
   z-index: 999999999;
   display: flex;
-  place-items: center;
-  justify-content: center;
-  transition: opacity 0.5s;
-}
-.loading-screen.loading-done { opacity: 0; pointer-events: none; }
-.loading-wrap {
-  --Lsize: 175px;
-  padding: 6px;
-  position: relative;
-  border-radius: 100px;
-  background-color: #000;
-  overflow: hidden;
-  transition: 0.8s ease-in-out;
-  box-shadow: 0 15px 15px #0003;
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-.loading-clicked {
-  transition-timing-function: cubic-bezier(0.33, 0.11, 1, 0.72);
-  min-width: calc(100vw + 5000px);
-  border-radius: 5000px;
-  min-height: calc(100vh + 500px);
-  box-shadow: none;
-}
-.loading-button {
-  padding: 20px 50px;
-  border-radius: 100px;
-  background-color: #000;
+  justify-content: center;
   overflow: hidden;
-  font-size: 17px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #eae5ec;
-  position: relative;
-  z-index: 9;
-  white-space: nowrap;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  transition: opacity 0.55s ease 0.45s;
 }
-.loading-hover {
-  background-color: #a87cff;
-  width: 250px;
-  height: 120px;
+.loading-screen:before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
+  top: 50%; left: 50%;
+  width: 60vmax; height: 60vmax;
   transform: translate(-50%, -50%);
-  filter: blur(30px);
+  background: radial-gradient(circle, rgba(127, 64, 255, 0.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+.loading-name {
+  font-size: clamp(38px, 7.5vw, 120px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  background: linear-gradient(180deg, #ffffff 20%, #c2a4ff 75%, #7f40ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transform: scale(1);
   opacity: 1;
-  transition: opacity 0.5s;
+  will-change: transform, opacity;
+  transition: transform 1s cubic-bezier(0.66, 0, 0.86, 0), opacity 0.55s ease 0.4s;
 }
-.loading-clicked .loading-hover { opacity: 0; }
-.loading-clicked .loading-button { opacity: 0; transition: 0.4s; }
-.loading-box {
-  width: 13px;
-  height: 22px;
-  background-color: #fff;
-  animation: blink 1s linear infinite;
+.loading-name span { letter-spacing: 0; }
+.loading-percent {
+  position: absolute;
+  right: 4vw;
+  bottom: 3.5vh;
+  font-size: clamp(56px, 9vw, 140px);
+  font-weight: 200;
+  line-height: 1;
+  color: #eae5ec;
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.3s;
 }
-@keyframes blink { 0% { opacity: 0; } 25% { opacity: 1; } 75% { opacity: 1; } to { opacity: 0; } }
+.loading-percent i { font-style: normal; font-size: 0.35em; color: var(--accentColor); margin-left: 4px; }
+.loading-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffffff10;
+  transition: opacity 0.3s;
+}
+.loading-bar span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #7f40ff, #c2a4ff);
+  box-shadow: 0 0 18px #a855f7cc;
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+/* Netflix-style reveal: name zooms hard toward the viewer while everything fades */
+.loading-screen.loading-zoom { opacity: 0; pointer-events: none; }
+.loading-screen.loading-zoom .loading-name { transform: scale(22); opacity: 0; }
+.loading-screen.loading-zoom .loading-percent,
+.loading-screen.loading-zoom .loading-bar { opacity: 0; }
 
 /* ============ HEADER / NAV ============ */
 .hover-link { position: relative; display: flex; text-wrap: nowrap; overflow: hidden; }
@@ -287,14 +288,6 @@ main { opacity: 1; transition: 0.3s; }
   bottom: 50px;
   pointer-events: none;
 }
-.character-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-.character-canvas canvas { width: 100% !important; height: 100% !important; display: block; }
-.character-fallback { display: none; }
-.character-fallback.active { display: block; }
 .character-img {
   position: absolute;
   bottom: 0;

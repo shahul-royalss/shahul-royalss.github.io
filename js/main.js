@@ -179,23 +179,58 @@
     tl.to(["#header", "#iconsSection"], { opacity: 1, duration: 0.9 }, 0.9);
   }
 
-  /* ---------------- Loading screen ---------------- */
+  /* ---------------- Loading screen: percentage + Netflix-style zoom ---------------- */
   var loadingScreen = document.getElementById("loadingScreen");
-  var loadingWrap = document.getElementById("loadingWrap");
+  var loadingPercent = document.getElementById("loadingPercent");
+  var loadingBarFill = document.getElementById("loadingBarFill");
   var loaderDone = false;
+  var pageLoaded = document.readyState === "complete";
+  // ready when the hero-critical assets are in (fonts + character image),
+  // not when every icon on the page has finished
+  Promise.all([
+    document.fonts ? document.fonts.ready : Promise.resolve(),
+    new Promise(function (res) {
+      var img = document.getElementById("characterImg");
+      if (!img || img.complete) return res();
+      img.addEventListener("load", res);
+      img.addEventListener("error", res);
+    })
+  ]).then(function () { pageLoaded = true; });
+  window.addEventListener("load", function () { pageLoaded = true; });
+  setTimeout(function () { pageLoaded = true; }, 5000); // never hang on a slow asset
+
+  (function runLoader() {
+    if (!loadingScreen) { initialFX(); return; }
+    var displayed = 0;
+    var start = performance.now();
+    function frame(now) {
+      if (loaderDone || !document.body.contains(loadingScreen)) return;
+      // ramp to 90 while assets load, then race to 100 once the page is ready
+      // (minimum 1.4s on screen so the counter never just flashes past)
+      var ramp = Math.min(90, ((now - start) / 2200) * 90);
+      var target = pageLoaded && now - start > 1400 ? 100 : ramp;
+      displayed += (target - displayed) * 0.09;
+      if (target === 100 && target - displayed < 0.5) displayed = 100;
+      var shown = Math.floor(displayed);
+      if (loadingPercent) loadingPercent.innerHTML = shown + "<i>%</i>";
+      if (loadingBarFill) loadingBarFill.style.transform = "scaleX(" + displayed / 100 + ")";
+      if (displayed >= 100) { finishLoader(); return; }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  })();
+
   function finishLoader() {
     if (loaderDone) return;
     loaderDone = true;
-    if (loadingWrap) loadingWrap.classList.add("loading-clicked");
     setTimeout(function () {
-      if (loadingScreen) loadingScreen.classList.add("loading-done");
-      initialFX();
-      setTimeout(function () { if (loadingScreen) loadingScreen.remove(); }, 800);
-    }, 650);
+      if (loadingScreen) loadingScreen.classList.add("loading-zoom"); // name zooms toward the viewer
+      setTimeout(function () {
+        initialFX(); // homepage opens underneath as the zoom fades out
+      }, 320);
+      setTimeout(function () { if (loadingScreen) loadingScreen.remove(); }, 1400);
+    }, 300);
   }
-  if (document.readyState === "complete") setTimeout(finishLoader, 600);
-  else window.addEventListener("load", function () { setTimeout(finishLoader, 600); });
-  setTimeout(finishLoader, 3200); // fallback
 
   if (!window.gsap || !window.ScrollTrigger) {
     // CDN failure fallback: show everything

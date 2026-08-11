@@ -14,12 +14,11 @@
 </head>
 <body class="loading">
 
-  <!-- ============ LOADING SCREEN ============ -->
+  <!-- ============ LOADING SCREEN (percentage + Netflix-style zoom reveal) ============ -->
   <div class="loading-screen" id="loadingScreen">
-    <div class="loading-wrap" id="loadingWrap">
-      <div class="loading-hover"></div>
-      <div class="loading-button">SHAIK SHAHUL <span class="loading-box"></span></div>
-    </div>
+    <div class="loading-name" id="loadingName">SHAIK<span> </span>SHAHUL</div>
+    <div class="loading-percent" id="loadingPercent">0<i>%</i></div>
+    <div class="loading-bar"><span id="loadingBarFill"></span></div>
   </div>
 
   <main class="main-body main-active">
@@ -60,12 +59,11 @@
         </a>
       </div>
 
-      <!-- ============ CHARACTER (real-time 3D — see js/hero3d.js) ============ -->
+      <!-- ============ CHARACTER ============ -->
       <div class="character-container">
         <div class="character-model" id="characterModel">
           <div class="character-rim" id="characterRim"></div>
-          <div class="character-canvas" id="characterCanvas"></div>
-          <img class="character-img character-fallback" id="characterImg" src="assets/hero-character.png" alt="Shaik Shahul — character" fetchpriority="high" decoding="async" />
+          <img class="character-img" id="characterImg" src="assets/hero-character.png" alt="Shaik Shahul — 3D character" fetchpriority="high" decoding="async" />
         </div>
       </div>
 
@@ -469,14 +467,5 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
-    }
-  }
-  </script>
-  <script type="module" src="js/hero3d.js"></script>
 </body>
 </html>

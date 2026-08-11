@@ -1,9 +1,7 @@
 # Shaik Shahul — Portfolio
 
 Personal portfolio of **Shaik Shahul** — AI/ML Developer & Full-Stack Engineer.
-Dark, animated single-page site: GSAP scroll animations, Lenis smooth scrolling, a custom cursor, a pinned horizontal projects gallery, and a **real-time interactive 3D hero** (Three.js) with cursor head/eye tracking, a cursor-following purple light, idle breathing and scroll transitions.
-
-The hero loads `assets/models/avatar.glb` when present — see [MODEL_GUIDE.md](MODEL_GUIDE.md) for the Blender/FaceBuilder export spec. Until then a procedural stylized bust with identical node names keeps every interaction live.
+Dark, animated single-page site: a percentage preloader with a Netflix-style zoom reveal, GSAP scroll animations, Lenis smooth scrolling, a custom cursor, an interactive hero character, and a pinned horizontal projects gallery.
 
 ## Run locally
 
@@ -20,12 +18,9 @@ Then open http://localhost:4173. (Opening `index.html` directly also works, but 
 ```
 index.html            — all content/sections
 css/style.css         — full stylesheet (Geist font, #0b080c / #c2a4ff theme)
-js/main.js            — GSAP + ScrollTrigger + Lenis animations
-js/hero3d.js          — Three.js interactive 3D hero (GLB loader + placeholder)
-MODEL_GUIDE.md        — how to export avatar.glb from Blender
-assets/models/        — drop avatar.glb here (see MODEL_GUIDE.md)
+js/main.js            — loader, GSAP + ScrollTrigger + Lenis animations
 assets/video/video.webm         — Tech Stack background video
-assets/hero-character.png      — fallback / mobile hero image
+assets/hero-character.png       — hero character (interactive parallax)
 assets/projects/*.svg           — 8 minimal project cover images
 assets/resume/Shaik_Shahul_Resume.pdf
 ```
