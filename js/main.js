@@ -207,9 +207,10 @@
       if (loaderDone || !document.body.contains(loadingScreen)) return;
       // ramp to 90 while assets load, then race to 100 once the page is ready
       // (minimum 1.4s on screen so the counter never just flashes past)
-      var ramp = Math.min(90, ((now - start) / 2200) * 90);
+      var ramp = Math.min(90, Math.max(0, ((now - start) / 2200) * 90));
       var target = pageLoaded && now - start > 1400 ? 100 : ramp;
       displayed += (target - displayed) * 0.09;
+      displayed = Math.max(0, displayed);
       if (target === 100 && target - displayed < 0.5) displayed = 100;
       var shown = Math.floor(displayed);
       if (loadingPercent) loadingPercent.innerHTML = shown + "<i>%</i>";
